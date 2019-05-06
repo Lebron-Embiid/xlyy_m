@@ -154,6 +154,12 @@ body{
 	background: #be0020;
 }
 
+
+.pc_cert_box li a{
+	display: block;
+	overflow: hidden;
+	color: #242424;
+}
 .pc_cert_box li span{
 	display: block;
 	width: .54rem;
@@ -270,42 +276,62 @@ body{
 	justify-content: space-between;
 	align-items: center;
 }
-.atten_list .left{
+.atten_list li .left{
 	width: 65%;
 	display: flex;
 	justify-content: flex-start;
 }
-.atten_list .left img{
-	display: block;
+.atten_list li .left .img{
 	width: 1.2rem;
 	height: 1.26rem;
 	margin-right: .15rem;
+	position: relative;
 }
-.atten_list .left .word{
+.atten_list li.active .left .img:after{
+	content: "V";
+	display: block;
+	width: .36rem;
+	height: .36rem;
+	line-height: .36rem;
+	text-align: center;
+	background: #ffcc33;
+	border-radius: 50%;
+	color: #fff;
+	font-size: .22rem;
+	position: absolute;
+	right: -.07rem;
+	bottom: -.05rem;
+}
+.atten_list li .left img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.atten_list li .left .word{
 	width: 70%;
 }
-.atten_list .left .word h4{
+.atten_list li .left .word h4{
 	color: #222;
 	font-size: .26rem;
 	margin: .05rem 0;
 }
-.atten_list .left .word h6{
+.atten_list li .left .word h6{
 	color: #414040;
 	font-size: .22rem;
 	margin-bottom: .2rem;
 }
-.atten_list .left .word p{
+.atten_list li .left .word p{
 	color: #222;
 	font-size: .22rem;
 	overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.atten_list .right{
+.atten_list li .right{
 	width: 30%;
 	text-align: right;
 }
-.atten_list .right a{
+.atten_list li .right a{
 	display: inline-block;
 	padding: 0 .15rem;
 	height: .6rem;
@@ -314,14 +340,188 @@ body{
 	color: #000;
 	font-size: .24rem;
 }
-.atten_list .right a.def_atten{
+.atten_list li .right a.def_atten{
 	width: 1.15rem;
 	text-align: center;
 }
-.atten_list .right a img{
+.atten_list li .right a img{
 	display: inline-block;
 	width: .26rem;
 	height: .22rem;
 	vertical-align: middle;
 	margin: 0 .05rem .05rem 0;
+}
+
+
+/* 粉丝 */
+.toLevel_box{
+	background: #f5f5f5;
+	padding: .2rem;
+	box-sizing: border-box;
+}
+.toLevel_box p{
+	color: #414040;
+	font-size: .22rem;
+	text-align: center;
+}
+
+
+/* 置顶 */
+.my_top_box{
+	overflow: hidden;
+}
+.top_nav_ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: .2rem .6rem;
+	border-bottom: 1px solid #f2f2f2;
+	margin-bottom: .1rem;
+}
+.top_nav_ul li{
+	/* width: 30%; */
+	/* text-align: center; */
+	color: #999;
+	font-size: .22rem;
+}
+.top_content_ul{
+	overflow: hidden;
+}
+.top_content_ul li{
+	color: #222;
+	font-size: .26rem;
+	padding: .25rem .2rem .25rem .3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top_content_ul li p img{
+	display: inline-block;
+	width: .34rem;
+	height: .34rem;
+	vertical-align: middle;
+	margin: 0 .15rem .03rem 0;
+}
+.top_content_ul li a{
+	display: block;
+	width: 1.28rem;
+	height: .58rem;
+	line-height: .58rem;
+	text-align: center;
+	color: #000;
+	font-size: .24rem;
+	background: #ffcc33;
+}
+
+
+/* 我的认证 */
+.my_auth_box{
+	overflow: hidden;
+}
+.my_auth_box .auth_item a{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .35rem .5rem .4rem;
+	border-bottom: 1px solid #EFEFEF;
+	color: #232323;
+	font-size: .26rem;
+}
+.my_auth_box .auth_item .left img{
+	display: inline-block;
+	width: .84rem;
+	height: .76rem;
+	vertical-align: middle;
+	margin: 0 0 .05rem .4rem;
+}
+.my_auth_box .auth_item .right img{
+	display: inline-block;
+	width: .16rem;
+	height: .25rem;
+	vertical-align: middle;
+	margin: 0 0 .05rem .5rem;
+}
+
+
+/* 实名认证 */
+.name_photo_box{
+	padding: .4rem .2rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	color: #2b2b2b;
+	font-size: .26rem;
+	margin-bottom: .4rem;
+}
+.name_photo_box .upload_box{
+	width: 2.2rem;
+	height: 2.7rem;
+	border: 1px dashed #C1C1C1;
+	margin-bottom: .15rem;
+	background: url(../images/camera.png) center center no-repeat;
+	background-size: .57rem .47rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.name_photo_box .upload_box .ub_photo{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.name_photo_box .upload_box input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	outline: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.form_box{
+	border-top: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+}
+.form_box .form_item{
+	display: flex;
+	padding: .25rem .3rem;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #F0F0F0;
+}
+.form_box .form_item:last-child{
+	border-bottom: 0;
+}
+.form_box .form_item span{
+	color: #2c2c2c;
+	font-size: .26rem;
+}
+.form_box .form_item input{
+	display: block;
+	width: 60%;
+	color: #808080;
+	font-size: .24rem;
+	border: 0;
+	outline: none;
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.form_box .form_item img{
+	display: block;
+	width: .37rem;
+	height: .37rem;
+	border-radius: 50%;
+}
+.name_auth_box h5{
+	text-align: center;
+	color: #808080;
+	font-size: .24rem;
+	margin-top: .7rem;
 }

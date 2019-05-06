@@ -41,7 +41,7 @@ a,a:hover,a:focus{
 	line-height: .8rem;
 	text-align: center;
 }
-.header_back a{
+.header_back a.left_back{
 	position: absolute;
 	height: .8rem;
 	display: flex;
@@ -50,10 +50,33 @@ a,a:hover,a:focus{
 	top: 0;
 	padding: 0 .2rem;
 }
-.header_back a img{
+.header_back a.right_word{
+	position: absolute;
+	height: .8rem;
+	line-height: .8rem;
+	top: 0;
+	right: 0;
+	padding: 0 .2rem;
+	color: #fff;
+	font-size: .28rem;
+}
+.header_back a.left_back img{
 	display: block;
 	width: .21rem;
 	height: .37rem;
+}
+
+a.top_vip_btn{
+	display: block;
+	width: 2.35rem;
+	height: .68rem;
+	line-height: .68rem;
+	text-align: center;
+	color: #fff;
+	font-size: .22rem;
+	background: #ba0f2e;
+	border-radius: .05rem;
+	margin: .2rem auto 0;
 }
 
 /* 底部 */

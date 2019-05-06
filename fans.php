@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>已关注</title>
+	<title>我的粉丝</title>
 	<meta name="keywords" content="关键词">
 	<meta name="description" content="网站描述">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -18,13 +18,12 @@
 <body>
 	<div class="header_back">
 		<a href="javascript:history.go(-1);" class="left_back"><img src="images/back.png" alt=""></a>
-		<h2>已关注</h2>
+		<h2>我的粉丝</h2>
 	</div>
 	<div class="mt80"></div>
 	<div class="atten_box">
 		<div class="atten_till">
-			<div><span></span>已关注会员10/10</div>
-			<p>关注人数已到上限，升级关注更多</p>
+			<div><span></span>我的粉丝12位</div>
 		</div>
 		<ul class="atten_list">
 			<li class="active">
@@ -37,20 +36,24 @@
 					</div>
 				</div>
 				<div class="right">
-					<a href=""><img src="images/each.png" alt="">互相关注</a>
+					<a href="" class="def_atten">+关注</a>
 				</div>
 			</li>
-			<li class="active">
+			<div class="toLevel_box">
+				<p>普通用户只能看到最近一位粉丝的信息，如果您希望查看更多，请升级</p>
+				<a href="" class="top_vip_btn">立即升级</a>
+			</div>
+			<li>
 				<div class="left">
 					<div class="img"><img src="images/atten_img2.jpg" alt=""></div>
 					<div class="word">
 						<h4>小情</h4>
-						<h6>28、江苏省盐城市</h6>
-						<p>期待奢华的生活方式</p>
+						<h6>------</h6>
+						<p>------</p>
 					</div>
 				</div>
 				<div class="right">
-					<a href="" class="def_atten">+关注</a>
+					<a href=""><img src="images/each.png" alt="">互相关注</a>
 				</div>
 			</li>
 			<li>
@@ -58,51 +61,12 @@
 					<div class="img"><img src="images/atten_img3.jpg" alt=""></div>
 					<div class="word">
 						<h4>小情</h4>
-						<h6>28、江苏省盐城市</h6>
-						<p>期待奢华的生活方式</p>
-					</div>
-				</div>
-				<div class="right">
-					<a href="" class="def_atten">已关注</a>
-				</div>
-			</li>
-			<li>
-				<div class="left">
-					<div class="img"><img src="images/atten_img4.jpg" alt=""></div>
-					<div class="word">
-						<h4>小情</h4>
-						<h6>28、江苏省盐城市</h6>
-						<p>期待奢华的生活方式</p>
-					</div>
-				</div>
-				<div class="right">
-					<a href=""><img src="images/each.png" alt="">互相关注</a>
-				</div>
-			</li>
-			<li>
-				<div class="left">
-					<div class="img"><img src="images/atten_img5.jpg" alt=""></div>
-					<div class="word">
-						<h4>小情</h4>
-						<h6>28、江苏省盐城市</h6>
-						<p>期待奢华的生活方式</p>
+						<h6>------</h6>
+						<p>------</p>
 					</div>
 				</div>
 				<div class="right">
 					<a href="" class="def_atten">+关注</a>
-				</div>
-			</li>
-			<li>
-				<div class="left">
-					<div class="img"><img src="images/atten_img6.jpg" alt=""></div>
-					<div class="word">
-						<h4>小情</h4>
-						<h6>28、江苏省盐城市</h6>
-						<p>期待奢华的生活方式</p>
-					</div>
-				</div>
-				<div class="right">
-					<a href="" class="def_atten">已关注</a>
 				</div>
 			</li>
 		</ul>
