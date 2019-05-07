@@ -80,7 +80,7 @@
 		</div>
 		<div class="person_nav_box mb50">
 			<div class="pn_item">
-				<a href="">
+				<a href="my_wallet.php">
 					<p><img src="images/person_icon1.png" class="icon" alt="">我的钱包</p>
 					<p><img src="images/three.png" class="three" alt=""></p>
 				</a>
@@ -100,7 +100,7 @@
 		</div>
 		<div class="person_nav_box mb50">
 			<div class="pn_item">
-				<a href="">
+				<a href="my_vip.php">
 					<p><img src="images/person_icon3.png" class="icon" alt="">我的初级会员</p>
 					<p><span>2019-10-10到期</span><img src="images/three.png" class="three" alt=""></p>
 				</a>
@@ -132,7 +132,7 @@
 		</div>
 		<div class="person_nav_box mb50">
 			<div class="pn_item">
-				<a href="">
+				<a href="settings.php">
 					<p><img src="images/person_icon8.png" class="icon" alt="">设置</p>
 					<p><img src="images/three.png" class="three" alt=""></p>
 				</a>

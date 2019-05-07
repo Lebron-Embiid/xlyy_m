@@ -14,6 +14,7 @@
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/modal.js"></script>
 	<style>
 		body{
 			background: #fff;
@@ -24,7 +25,7 @@
 	<div class="header_back">
 		<a href="javascript:history.go(-1);" class="left_back"><img src="images/back.png" alt=""></a>
 		<h2>实名认证</h2>
-		<a href="" class="right_word">提交</a>
+		<a href="javascript:void(0);" class="right_word">提交</a>
 	</div>
 	<div class="mt80"></div>
 	<div class="name_auth_box">
@@ -54,54 +55,42 @@
 		<div class="form_box">
 			<div class="form_item">
 				<span>真实姓名</span>
-				<input type="text" name="username" placeholder="请在此输入您的真实姓名">
-				<img src="images/clear.png" class="clear_input" alt="">
+				<input type="text" class="input" name="username" placeholder="请在此输入您的真实姓名">
+				<div class="right_click"><img src="images/clear.png" class="clear_input" alt=""></div>
 			</div>
 			<div class="form_item">
 				<span>身份证号</span>
-				<input type="text" name="id_card" placeholder="请在此输入您的身份证号">
-				<img src="images/clear.png" class="clear_input" alt="">
+				<input type="text" class="input" name="id_card" placeholder="请在此输入您的身份证号">
+				<div class="right_click"><img src="images/clear.png" class="clear_input" alt=""></div>
 			</div>
 		</div>
 		<h5>您的信息提交之后，我们会在24小时之内审核！</h5>
 	</div>
+	<div class="modal_shadow"></div>
+	<div class="modal_box">
+		<div class="close_img"><img src="images/close.png" alt=""></div>
+		<img src="images/kefu.png" class="img" alt="">
+		<p>平台运营会在24小时之内审核您的身份信息。请您耐心等待！</p>
+		<a href="" class="single_ok">确定</a>
+	</div>
 	<?php include "footer.php"; ?>
 </body>
+<script src="js/common.js"></script>
 <script>
 	$(function(){
-		function run(input_file,get_data){
-	        /*input_file：文件按钮对象*/
-	        /*get_data: 转换成功后执行的方法*/
-	        if ( typeof(FileReader) === 'undefined' ){
-	            alert("抱歉，你的浏览器不支持 FileReader，不能将图片转换为Base64，请使用现代浏览器操作！");
-	        } else {
-	            try{
-	                /*图片转Base64 核心代码*/
-	                var file = input_file.files[0];
-	                //这里我们判断下类型如果不是图片就返回 去掉就可以上传任意文件
-	                if(!/image\/\w+/.test(file.type)){
-	                    alert("请确保文件为图像类型");
-	                    return false;
-	                }
-	                var reader = new FileReader();
-	                reader.onload = function(){
-	                    get_data(this.result);
-	                }
-	                reader.readAsDataURL(file);
-	            }catch (e){
-	                alert('图片转Base64出错啦！'+ e.toString())
-	            }
-	        }
-	    }
+		var modal = new LModal();
+		$("body").on("click",".right_word",function(){
+			modal.showModal(".modal_box");
+		})
+		$(".single_ok").click(function(){
+			modal.cancleModal(".modal_box");
+		})
+		
 		$(".name_photo_box").on("change",".file",function(){
 			var _this = this;
 			run(_this, function (data) {
 				$(_this).siblings(".ub_photo").attr('src',data);
 			});
-		})
-		
-		$(".form_box").on("click",".clear_input",function(){
-			$(this).siblings("input").val("");
 		})
 	})
 </script>
