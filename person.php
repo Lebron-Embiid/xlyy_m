@@ -28,7 +28,7 @@
 		<ul class="person_nav">
 			<li><a href="attention.php"><p>关注</p><span>8</span></a></li>
 			<li><a href="fans.php"><p>粉丝</p><span>85</span></a></li>
-			<li><a href=""><p>会员等级</p><span>初级</span></a></li>
+			<li><a href="vip_level.php"><p>会员等级</p><span>初级</span></a></li>
 		</ul>
 	</div>
 	<div class="person_content">
@@ -86,14 +86,8 @@
 				</a>
 			</div>
 			<div class="pn_item">
-				<a href="">
+				<a href="vip_level.php">
 					<p><img src="images/person_icon2.png" class="icon" alt="">会员等级</p>
-					<p><img src="images/three.png" class="three" alt=""></p>
-				</a>
-			</div>
-			<div class="pn_item">
-				<a href="top.php">
-					<p><img src="images/person_icon2.png" class="icon" alt="">我的置顶</p>
 					<p><img src="images/three.png" class="three" alt=""></p>
 				</a>
 			</div>

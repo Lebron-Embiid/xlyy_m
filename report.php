@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>意见反馈</title>
+	<title>举报不良信息</title>
 	<meta name="keywords" content="关键词">
 	<meta name="description" content="网站描述">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -16,27 +16,54 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/modal.js"></script>
 	<style>
-		a.submit_btn{
-			margin-top: .4rem;
+		.reason_select label{
+			color: #545454;
+			font-size: .2rem;
+			padding: .2rem .25rem;
+		}
+		.report_box{
+			padding-top: .5rem;
+		}
+		.reason_select{
+			margin-bottom: .5rem;
+		}
+		.feed_item textarea{
+			border: 0;
+		}
+		.upload_item{
+			background: #fff;
+			border-top: 1px solid #F2F2F2;
+		}
+		.upload_item h4{
+			padding-top: .4rem;
+			border-bottom: 1px solid #F2F2F2;
+		}
+		.feed_upload_photo{
+			padding: .4rem .25rem;
 		}
 	</style>
 </head>
 <body>
 	<div class="header_back">
 		<a href="javascript:history.go(-1);" class="left_back"><img src="images/back.png" alt=""></a>
-		<h2>意见反馈</h2>
+		<h2>举报不良信息</h2>
+		<a href="" class="right_word save_btn">保存</a>
 	</div>
 	<div class="mt80"></div>
-	<div class="feedback_box">
-		<div class="feed_item">
-			<h4>反馈内容</h4>
-			<textarea name="content" id="" placeholder="请详细描述您的问题" cols="30" rows="10"></textarea>
+	<div class="feedback_box report_box">
+		<div class="reason_select">
+			<label for="report1"><input type="checkbox" name="report[]" id="report1">我的-举报不良信息</label>
+			<label for="report2"><input type="checkbox" name="report[]" id="report2">欺诈（酒托，饭托等）</label>
+			<label for="report3"><input type="checkbox" name="report[]" id="report3">涉嫌政治或暴力内容</label>
+			<label for="report4"><input type="checkbox" name="report[]" id="report4">恶意骚扰，不文明行为</label>
+			<label for="report5"><input type="checkbox" name="report[]" id="report5">淫秽色情</label>
+			<label for="report6"><input type="checkbox" name="report[]" id="report6">其他</label>
 		</div>
-		<div class="feed_item">
-			<h4>联系方式</h4>
-			<textarea name="contact" id="" placeholder="请留下您的联系方式，方便我们与您联系" cols="30" rows="10"></textarea>
+		<div class="feed_item" style="margin-bottom: .5rem;">
+			<h4>备注</h4>
+			<textarea name="remark" id="" placeholder="请填写备注" cols="30" rows="10"></textarea>
 		</div>
-		<div class="feed_item">
+		<div class="feed_item upload_item">
 			<h4>如有需要，请点击此处上传相关图片</h4>
 			<div class="feed_upload_photo">
 				<ul class="photo_ul">
@@ -51,7 +78,6 @@
 				</ul>
 			</div>
 		</div>
-		<a href="" class="submit_btn">提交</a>
 	</div>
 	<div class="modal_shadow"></div>
 	<div class="modal_box del_photo_modal fix">

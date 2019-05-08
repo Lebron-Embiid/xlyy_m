@@ -5,12 +5,16 @@ $(function(){
 	})
 	
 	// 清空输入框
-	$(".form_box").on("click",".clear_input",function(){
+	$("body").on("click",".clear_input",function(){
 		$(this).parent().siblings(".input").val("");
 	})
 	// 显示密码
-	$(".form_box").on("click",".clear_eye",function(){
-		$(this).parent().siblings(".input").attr("type","text");
+	$("body").on("click",".clear_eye",function(){
+		if($(this).parent().siblings(".input").attr("type") == "password"){
+			$(this).parent().siblings(".input").attr("type","text");
+		}else{
+			$(this).parent().siblings(".input").attr("type","password");
+		}
 	})
 	
 	
@@ -38,6 +42,22 @@ $(function(){
 			}
 		}
 	}
+	
+	// 实名认证
+	$(".name_photo_box").on("change",".file",function(){
+		var _this = this;
+		run(_this, function (data) {
+			$(_this).siblings(".ub_photo").attr('src',data);
+		});
+	})
+	
+	// 上传二维码
+	$(".upload_code").on("change",".file",function(){
+		var _this = this;
+		run(_this, function (data) {
+			$(_this).siblings(".code_img").attr("src",data);
+		});
+	})
 	
 	// 获取验证码 倒计时
 	function invokeSettime(obj){

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>关闭账号</title>
+	<title>忘记密码</title>
 	<meta name="keywords" content="关键词">
 	<meta name="description" content="网站描述">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -22,41 +22,52 @@
 		.form_box .form_item{
 			background: #fff;
 		}
-		.form_box p{
-			color: #8f8f8f;
-			font-size: .2rem;
-			text-align: center;
+		.form_box .form_item span{
+			width: 30%;
+		}
+		.form_box .form_item .input{
+			width: 75%;
 		}
 	</style>
 </head>
 <body>
 	<div class="header_back">
 		<a href="javascript:history.go(-1);" class="left_back"><img src="images/back.png" alt=""></a>
-		<h2>关闭账号</h2>
-		<a href="reason.php" class="right_word">关闭</a>
+		<h2>忘记密码</h2>
+		<a href="javascript:void(0);" class="right_word save_btn">保存</a>
 	</div>
 	<div class="mt80"></div>
 	<div class="form_box" style="padding-top: .35rem;">
 		<div class="form_item">
-			<span>手机号</span>
-			<input type="number" class="input phone_txt" name="phone" placeholder="请输入手机号码">
+			<input type="number" class="input phone_txt" name="phone" placeholder="输入注册时使用的手机号码">
 			<div class="right_click"><img src="images/clear.png" class="clear_input" alt=""></div>
 		</div>
 		<div class="form_item">
-			<span>验证码</span>
-			<input type="text" class="input" name="code" placeholder="请输入验证码">
+			<input type="text" class="input" name="code" placeholder="输入验证码">
 			<div class="right_click"><input type="button" value="获取验证码" class="getCode"></input></div>
 		</div>
 		<div class="form_item">
-			<span>密码</span>
-			<input type="password" class="input" name="password" placeholder="6-16位字母/数字">
+			<input type="password" class="input" name="password" placeholder="设置新密码">
 			<div class="right_click"><img src="images/eye.png" class="clear_eye" alt=""></div>
 		</div>
-		<p style="margin-top: .5rem;">关闭账号您的信息将不再被服务器保存并永久删除无法恢复，</p>
-		<p>他人将无法再看到您的个人信息。</p>
-		<p>请慎重考虑。当您再次登陆时，系统将自动开通您的账号。</p>
 	</div>
-	<?php include "footer.php"; ?>
+	<div class="modal_shadow"></div>
+	<div class="modal_box change_pwd_modal fix">
+		<div class="close_img"><img src="images/close.png" alt=""></div>
+		<p style="margin-top: .5rem;text-align: center;">亲爱的用户，您已经成功重置密码。</p>
+		<a href="javascript:void(0);" class="single_ok">确定</a>
+	</div>
 </body>
 <script src="js/common.js"></script>
+<script>
+	$(function(){
+		var modal = new LModal();
+		$("body").on("click",".save_btn",function(){
+			modal.showModal(".change_pwd_modal");
+		})
+		$(".single_ok").click(function(){
+			modal.cancleModal(".change_pwd_modal");
+		})
+	})
+</script>
 </html>

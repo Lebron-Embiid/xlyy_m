@@ -89,23 +89,17 @@
 			modal.showModal(".withdraw_success_modal");
 		})
 		
+		// 提现金额选择
 		$(".recharge_ul").on("click","li",function(){
 			$(this).addClass("active").siblings().removeClass("active");
 			$(".recharge_price").val($(this).find("span").html());
 		})
 		
+		// 选择支付方式
 		$(".change_pay_type").on("click",".change_a",function(){
 			$(this).parent(".pay_item").removeClass("active").siblings().addClass("active");
 			$(this).siblings("div").find("input").prop("checked","true");
 			$(this).parent(".pay_item").siblings().find("input").prop("checked","false");
-		})
-		
-		// 上传二维码
-		$(".upload_code").on("change",".file",function(){
-			var _this = this;
-			run(_this, function (data) {
-				$(_this).siblings(".code_img").attr("src",data);
-			});
 		})
 	})
 </script>

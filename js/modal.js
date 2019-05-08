@@ -3,10 +3,10 @@ function LModal(name){
 }
 // 显示弹框
 LModal.prototype.showModal = function(name){
-	$(".modal_shadow").show();
+	$(".modal_shadow,.modal_shadow1").show();
 	$(name).show();
 }
 LModal.prototype.cancleModal = function(name){
-	$(".modal_shadow").hide();
+	$(".modal_shadow,.modal_shadow1").hide();
 	$(name).hide();
 }

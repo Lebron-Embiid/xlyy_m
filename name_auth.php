@@ -85,13 +85,6 @@
 		$(".single_ok").click(function(){
 			modal.cancleModal(".modal_box");
 		})
-		
-		$(".name_photo_box").on("change",".file",function(){
-			var _this = this;
-			run(_this, function (data) {
-				$(_this).siblings(".ub_photo").attr('src',data);
-			});
-		})
 	})
 </script>
 </html>

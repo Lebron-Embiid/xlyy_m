@@ -19,7 +19,7 @@
 	<div class="header_back">
 		<a href="javascript:history.go(-1);" class="left_back"><img src="images/back.png" alt=""></a>
 		<h2>我的会员信息</h2>
-		<a href="javascript:void(0);" class="right_img"><img src="images/warning.png" alt=""></a>
+		<a href="service_introduce.php" class="right_img"><img src="images/warning.png" alt=""></a>
 	</div>
 	<div class="mt80"></div>
 	<div class="my_vip_mess">
