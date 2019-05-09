@@ -1172,7 +1172,7 @@ a.login_out{
 .contact_box{
 	padding: .25rem 0;
 }
-.contact_box h4{
+.contact_box h4,.buy_vip_box .buy_vip_title,.basic_info_box .basic_title{
 	color: #222;
 	font-size: .26rem;
 	margin-bottom: .5rem;
@@ -1180,12 +1180,56 @@ a.login_out{
 	align-items: center;
 	justify-content: flex-start;
 }
-.contact_box h4 span,.about_box .about_title span,.web_version_box .web_item .span{
+.contact_box h4 span,.about_box .about_title span,.web_version_box .web_item .span,.buy_vip_box .buy_vip_title span,.basic_info_box .basic_title span{
 	display: block;
 	width: .43rem;
 	height: .17rem;
 	background: #ba0f2e;
 	margin: 0 .05rem 0 .02rem;
+}
+.basic_info_box .basic_title{
+	padding: .2rem 0;
+	background: #fff;
+	margin-bottom: .2rem;
+}
+.self_introduce_box .basic_title{
+	background: #F5F5F5;
+	margin-bottom: 0;
+}
+.basic_info_box .basic_title span{
+	width: .41rem;
+	margin-right: .1rem;
+}
+.self_introduce_box .basic_title i{
+	color: #7c7c7c;
+	font-size: .22rem;
+	margin-left: .1rem;
+	font-style: normal;
+}
+.self_introduce_box .sib_text{
+	padding: 0 .2rem;
+}
+.self_introduce_box .sib_text p,.my_find_box p{
+	color: #999;
+	font-size: .22rem;
+	margin-top: .15rem;
+}
+.my_find_box p{
+	margin-left: .2rem;
+}
+.self_introduce_box .sib_text textarea{
+	display: block;
+	width: 100%;
+	border: 0;
+	resize: none;
+	color: #999;
+	font-size: .22rem;
+	padding: .2rem;
+	box-sizing: border-box;
+	outline: none;
+}
+.my_find_box .sib_text textarea{
+	padding: .2rem 0;
 }
 .radio_select{
 	margin-bottom: .3rem;
@@ -1358,4 +1402,369 @@ a.login_out{
 	display: inline-block;
 	width: .39rem;
 	height: .39rem;
+}
+
+
+/* 购买会员 */
+.buy_vip_box{
+	overflow: hidden;
+}
+.buy_vip_box .buy_vip_title{
+	padding: .2rem 0;
+	margin: 0;
+}
+.buy_vip_box .buy_vip_title span{
+	width: .38rem;
+	margin-right: .1rem;
+}
+.buy_vip_select,.buy_vip_box ul{
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+	background: #fff;
+	margin-bottom: .25rem;
+}
+.buy_vip_select label,.buy_vip_box ul li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .2rem;
+	color: #222;
+	font-size: .24rem;
+	font-weight: normal;
+	border-bottom: 1px solid #DFDFDF;
+	margin: 0;
+}
+.buy_vip_select label:last-child,.buy_vip_box ul li:last-child{
+	border-bottom: 0;
+}
+.buy_vip_select label input{
+	transform: scale(1.3);
+}
+.buy_vip_select label p span{
+	text-decoration: line-through;
+	margin-right: .4rem;
+}
+.buy_vip_box ul{
+	margin: 0;
+}
+
+.high_vip_box{
+	padding: .5rem .8rem 0;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #222;
+	font-size: .24rem;
+	text-align: center;
+}
+.high_vip_box .arrow_img{
+	display: block;
+	width: 1.76rem;
+}
+.high_vip_box .left img{
+	display: block;
+	width: .38rem;
+	height: .5rem;
+	margin: 0 auto .1rem;
+}
+.high_vip_box .right img{
+	display: block;
+	width: .67rem;
+	height: .41rem;
+	margin: 0 auto .1rem;
+}
+.high_vip_box p{
+	margin-bottom: .4rem;
+}
+
+
+/* 支付 */
+.pay_box{
+	overflow: hidden;
+}
+.pay_box h6{
+	color: #222;
+	font-size: .26rem;
+	background: #fff;
+	text-align: center;
+	padding: .2rem 0;
+	margin-bottom: .1rem;
+}
+.pay_box h6 img{
+	display: inline-block;
+	width: .37rem;
+	margin-right: .15rem;
+}
+.pay_box .code_box{
+	padding: 0 .2rem;
+}
+.pay_box .code_box div{
+	background: #fff;
+	text-align: center;
+	padding-top: .7rem;
+}
+.pay_box .code_box div h4{
+	color: #222;
+	font-size: .38rem;
+}
+.pay_box .code_box div img{
+	display: block;
+	width: 2.78rem;
+	margin: .4rem auto .6rem;
+}
+.pay_box .code_box div h5{
+	padding: .3rem 0;
+	color: #222;
+	font-size: .24rem;
+	border-top: 1px solid #F4F4F4;
+}
+
+
+/* 基本信息 */
+.bi_select_box{
+	padding: 0 .2rem;
+}
+.bi_select_box .bis_item{
+	background: #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border: 1px solid #E9E9E9;
+	margin-bottom: .1rem;
+	padding: .1rem .2rem;
+	color: #222;
+}
+.bi_select_box .bis_item span{
+	width: 25%;
+	font-size: .24rem;
+	height: .5rem;
+	line-height: .5rem;
+	border-right: 1px solid #E8E8E8;
+}
+.bi_select_box .bis_item div{
+	width: 75%;
+	font-size: .22rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: .5rem;
+	box-sizing: border-box;
+}
+.bi_select_box .bis_item div input,.bi_select_box .bis_item div select{
+	border: 0;
+	width: 100%;
+	height: .5rem;
+	outline: none;
+}
+.bi_select_box .bis_item div{
+	position: relative;
+}
+.bi_select_box .bis_item div select{
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+.bi_select_box .bis_item div:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: .35rem;
+	height: .19rem;
+	background: url(../images/down.png) center center no-repeat;
+	background-size: 100%;
+}
+.bi_select_box .bis_item.no_down div:after{
+	display: none;
+}
+
+
+/* 预约历史 */
+.my_history_box{
+	overflow: hidden;
+}
+.my_history_box h4{
+	color: #252525;
+	font-size: .26rem;
+	padding: .2rem;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ECECEC;
+}
+.history_item{
+	background: #fff;
+	padding: .2rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	position: relative;
+}
+.history_item.finish{
+	background: #e0e0e0;
+}
+.history_item.finish:after{
+	content: "";
+	display: block;
+	width: 1.26rem;
+	height: 1.26rem;
+	position: absolute;
+	left: 65%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/finish.png) center center no-repeat;
+	background-size: 100%;
+}
+.history_item .left{
+	margin-right: .25rem;
+}
+.history_item .left .img{
+	width: 1.46rem;
+	height: 1.53rem;
+	position: relative;
+	margin-bottom: .1rem;
+}
+.history_item .left.auth .img:after{
+	content: "V";
+	display: block;
+	position: absolute;
+	right: -.08rem;
+	bottom: -.1rem;
+	width: .36rem;
+	height: .36rem;
+	line-height: .36rem;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	font-size: .22rem;
+	background: #ffcc33;
+}
+.history_item .left .img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.history_item .left p{
+	color: #222;
+	font-size: .24rem;
+	text-align: center;
+}
+.history_item .right{
+	width: 75%;
+}
+.history_item .right ul{
+	overflow: hidden;
+	margin: .05rem 0;
+}
+.history_item .right ul li{
+	float: left;
+	width: 65%;
+	margin-bottom: .15rem;
+	color: #222;
+	font-size: .24rem;
+}
+.history_item .right ul li:nth-child(2n){
+	width: 35%;
+	float: right;
+	text-align: right;
+}
+.history_item .right ul li .icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: .29rem;
+	margin: 0 .1rem .05rem 0;
+}
+.history_item .right .progress{
+	margin: 0;
+	width: 2rem;
+	height: .3rem;
+	border-radius: 0;
+	background: #fff;
+	border: 1px solid #a0a0a0;
+}
+.history_item .right .progress-bar{
+	background: #b5b5b5;
+}
+.history_item .right ul li .star{
+	display: inline-block;
+	vertical-align: middle;
+	width: .33rem;
+	margin: 0 0 .1rem .1rem;
+}
+
+
+/* 搜索 */
+.search_box{
+	padding: .35rem 0 .5rem;
+}
+.search_label_box{
+	padding: 0 .2rem;
+}
+.search_box h4{
+	color: #222;
+	font-size: .26rem;
+	padding: .15rem .2rem;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #E7E7E7;
+	margin-bottom: .1rem;
+}
+.search_ul{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: .1rem;
+}
+.search_ul li{
+	margin-right: 2%;
+	margin-bottom: .2rem;
+	/* width: 1.6rem; */
+	width: 23.5%;
+	height: .7rem;
+	line-height: .7rem;
+	text-align: center;
+	background: #fff;
+	color: #626262;
+	font-size: .22rem;
+	border-radius: .05rem;
+	box-sizing: border-box;
+	border: 1px solid #B9B9B9;
+}
+.search_ul li:nth-child(4n){
+	margin-right: 0;
+}
+.search_ul li.active{
+	color: #fff;
+	background: #cc0000;
+	border-color: #cc0000;
+}
+
+.search_ser_type{
+	padding: .2rem .5rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.search_ser_type span{
+	display: block;
+	width: 1.2rem;
+	color: #222;
+	font-size: .24rem;
+	margin-right: .1rem;
+}
+.search_ser_type label{
+	display: block;
+	width: 100%;
+	margin: 0 0 .2rem 0;
+	font-weight: normal;
+	color: #222;
+	font-size: .22rem;
+}
+.search_ser_type label input{
+	display: inline-block;
+	vertical-align: middle;
+	transform: scale(1.3);
+	margin: 0 .2rem .03rem 0;
 }

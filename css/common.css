@@ -294,6 +294,42 @@ a.submit_btn{
 	width: 100%;
 }
 
+.modal_pay_box{
+	padding: 0 .3rem .3rem;
+}
+.modal_pay_box h6,.modal_pay_box label{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: .4rem;
+	font-size: .24rem;
+	color: #fff;
+}
+.modal_pay_box label{
+	font-size: .22rem;
+	font-weight: normal;
+}
+.modal_pay_box label input{
+	transform: scale(1.3);
+	outline: none;
+}
+.modal_pay_box label p img{
+	display: inline-block;
+	width: .62rem;
+	height: .54rem;
+}
+.modal_pay_box label p{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.modal_pay_box label p span{
+	display: block;
+	width: 1rem;
+	text-align: right;
+}
+
+
 
 .form_box .form_item .right_click,.login_form .login_item .right_click{
 	width: 20%;

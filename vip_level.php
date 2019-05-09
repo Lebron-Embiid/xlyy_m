@@ -39,9 +39,9 @@
 			<li><span>VIP</span></li>
 		</ul>
 		<ul class="nav_btn">
-			<li class="active"><a href="">续费</a></li>
-			<li><a href="">升级</a></li>
-			<li><a href="">升级</a></li>
+			<li class="active"><a href="buy_primary_vip.php">续费</a></li>
+			<li><a href="buy_high_vip.php">升级</a></li>
+			<li><a href="buy_high_vip.php">升级</a></li>
 		</ul>
 		<div class="vip_table_box">
 			<ul class="table_th">

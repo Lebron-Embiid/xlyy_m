@@ -100,25 +100,25 @@
 				</a>
 			</div>
 			<div class="pn_item">
-				<a href="">
+				<a href="basic_info.php">
 					<p><img src="images/person_icon4.png" class="icon" alt="">基本信息</p>
 					<p><img src="images/three.png" class="three" alt=""></p>
 				</a>
 			</div>
 			<div class="pn_item">
-				<a href="">
+				<a href="self_introduce.php">
 					<p><img src="images/person_icon5.png" class="icon" alt="">自我介绍</p>
 					<p><img src="images/three.png" class="three" alt=""></p>
 				</a>
 			</div>
 			<div class="pn_item">
-				<a href="">
+				<a href="my_photo.php">
 					<p><img src="images/person_icon6.png" class="icon" alt="">照片</p>
 					<p><img src="images/three.png" class="three" alt=""></p>
 				</a>
 			</div>
 			<div class="pn_item">
-				<a href="">
+				<a href="history.php">
 					<p><img src="images/person_icon7.png" class="icon" alt="">预约历史</p>
 					<p><img src="images/three.png" class="three" alt=""></p>
 				</a>

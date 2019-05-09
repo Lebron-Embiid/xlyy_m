@@ -59,6 +59,14 @@ $(function(){
 		});
 	})
 	
+	// 上传头像
+	$(".avatar_photo").on("change","#file",function(){
+		var _this = this;
+		run(_this, function (data) {
+			$(_this).siblings(".code_img").attr("src",data);
+		});
+	})
+	
 	// 获取验证码 倒计时
 	function invokeSettime(obj){
 		var countdown=60;
