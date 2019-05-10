@@ -25,7 +25,7 @@
 			margin-bottom: 0;
 		}
 		.upload_item h4{
-			padding-top: .4rem;
+			padding-top: .2rem;
 			border-bottom: 1px solid #F2F2F2;
 		}
 		.upload_item h4 span{
@@ -36,6 +36,13 @@
 		.upload_item h4 a{
 			color: #be0020;
 			font-size: .22rem;
+		}
+		.upload_item h4 img{
+			display: inline-block;
+			width: .4rem;
+			height: .4rem;
+			border-radius: 50%;
+			margin-right: .15rem;
 		}
 		.feed_upload_photo{
 			padding: .4rem .25rem;
@@ -52,6 +59,15 @@
 			position: absolute;
 			max-width: 100%;
 			max-height: 100%;
+		}
+		.avatar_del_box{
+			width: 1.68rem;
+		}
+		.avatar_del{
+			display: block;
+			width: .20rem;
+			height: .27rem;
+			margin: 0 auto .2rem;
 		}
 	</style>
 </head>
@@ -72,6 +88,31 @@
 						<img src="images/camera.png" class="camera_img"/>
 					</li>
 				</ul>
+				<div class="avatar_del_box"><img src="images/delete.png" class="avatar_del" alt=""></div>
+				<p style="color: #606060;font-size: .24rem;">图片尺寸需要大于100x100，最大不能超过10M。</p>
+			</div>
+		</div>
+		<div class="feed_item upload_item" style="margin-top: .3rem;">
+			<h4 style="border: 0;"><img src="images/avatar_ok.png" alt="">正确示范<a href="" style="margin-left: .2rem;">查看具体审核规范</a></h4>
+			<div class="demo_box">
+				<div class="demo_img">
+					<img src="images/avatar_demo1.jpg" alt="">
+					<img src="images/avatar_demo2.jpg" alt="">
+					<img src="images/avatar_demo3.jpg" alt="">
+				</div>
+				<p>-确保五官清晰，正面、微侧皆可；</p>
+				<p>-脸部半遮掩的照片也是允许的；</p>
+			</div>
+		</div>
+		<div class="feed_item upload_item" style="margin-top: .3rem;">
+			<h4 style="border: 0;"><img src="images/avatar_no.png" alt="">错误示范</h4>
+			<div class="demo_box">
+				<div class="demo_img">
+					<img src="images/avatar_demo4.jpg" alt="">
+					<img src="images/avatar_demo5.jpg" alt="">
+					<img src="images/avatar_demo6.jpg" alt="">
+				</div>
+				<p>-没有头部过于裸露或不是本人均不可以；</p>
 			</div>
 		</div>
 		<a href="javascript:void(0);" class="submit_btn avatar_btn">上传头像</a>
@@ -92,7 +133,7 @@
 		</div>
 		<a href="javascript:void(0);" class="submit_btn public_btn">上传公开图片</a>
 		<div class="feed_item upload_item">
-			<h4>隐私图片<span>您的隐私图片只会被您授权的会员看到。</span><a href="">我授权的会员</a></h4>
+			<h4>隐私图片<span>您的隐私图片只会被您授权的会员看到。</span><a href="auth_member.php">我授权的会员</a></h4>
 			<div class="feed_upload_photo">
 				<ul class="photo_ul photo_ul2">
 					<li class="add_photo">
@@ -137,6 +178,10 @@
 		})
 		$(".screct_btn").click(function(){
 			$("#file2").trigger("click");
+		})
+		
+		$(".avatar_del").click(function(){
+			$(".avatar_photo").find(".code_img").attr("src","");
 		})
 		
 		var modal = new LModal();

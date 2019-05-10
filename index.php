@@ -38,24 +38,32 @@
 	</div>
 	<ul class="index_list">
 		<li>
-			<div class="img"><img src="images/index_img1.jpg" alt=""></div>
-			<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>
-			<p>年收入：100万； 净值...</p>
+			<a href="vip_detail.php">
+				<div class="img"><img src="images/index_img1.jpg" alt=""></div>
+				<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>
+				<p>年收入：100万； 净值...</p>
+			</a>
 		</li>
 		<li>
-			<div class="img"><img src="images/index_img2.jpg" alt=""></div>
-			<h4><span class="il_name">木荣赫</span><span class="il_level">VIP</span></h4>
-			<p>年收入：100万； 净值...</p>
+			<a href="vip_detail.php">
+				<div class="img"><img src="images/index_img2.jpg" alt=""></div>
+				<h4><span class="il_name">木荣赫</span><span class="il_level">VIP</span></h4>
+				<p>年收入：100万； 净值...</p>
+			</a>
 		</li>
 		<li>
-			<div class="img"><img src="images/index_img1.jpg" alt=""></div>
-			<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>
-			<p>年收入：100万； 净值...</p>
+			<a href="vip_detail.php">
+				<div class="img"><img src="images/index_img1.jpg" alt=""></div>
+				<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>
+				<p>年收入：100万； 净值...</p>
+			</a>
 		</li>
 		<li>
-			<div class="img"><img src="images/index_img2.jpg" alt=""></div>
-			<h4><span class="il_name">木荣赫</span><span class="il_level">VIP</span></h4>
-			<p>年收入：100万； 净值...</p>
+			<a href="vip_detail.php">
+				<div class="img"><img src="images/index_img2.jpg" alt=""></div>
+				<h4><span class="il_name">木荣赫</span><span class="il_level">VIP</span></h4>
+				<p>年收入：100万； 净值...</p>
+			</a>
 		</li>
 	</ul>
 	<div class="modal_shadow"></div>

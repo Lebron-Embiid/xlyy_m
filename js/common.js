@@ -101,4 +101,46 @@ $(function(){
 			invokeSettime(".getCode");
 		},500)
 	})
+	
+	// 会员详情评价展开
+	$(".vcb_eval_box").on("click",".ve_down",function(){
+		if($(this).parents(".vd_eval_item").hasClass("active")){
+			$(this).parents(".vd_eval_item").removeClass("active");
+		}else{
+			$(this).parents(".vd_eval_item").addClass("active");
+		}
+	})
+	
+	// 会员详情选项卡
+	$(".vcb_nav_ul").on("click","li",function(){
+		var index = $(this).index();
+		$(this).addClass("active").siblings().removeClass("active");
+		$(".vcb_nav_content").eq(index).addClass("active").siblings().removeClass("active");
+	})
+	
+	// 发红包支付方式选择
+	$(".modal_red_type").on("click",".r_img",function(){
+		var index = $(this).index();
+		$(this).addClass("active").siblings().removeClass("active");
+		$(".modal_red_word").eq(index).addClass("active").siblings().removeClass("active");
+	})
+	
+	// 会员详情 点击圆点 弹出
+	$(".menu_icon").click(function(){
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$(".fix_shadow_bg").removeClass("active");			
+		}else{
+			$(this).addClass("active");
+			$(".fix_shadow_bg").addClass("active");
+		}
+	})
+	$(".share_icon,.header_back h2").click(function(){
+		$(".menu_icon").removeClass("active");
+		$(".fix_shadow_bg").removeClass("active");
+	})
+	$(".fix_shadow_bg").click(function(){
+		$(this).removeClass("active");
+		$(".menu_icon").removeClass("active");
+	})
 })
