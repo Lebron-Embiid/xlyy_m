@@ -100,7 +100,7 @@ a.submit_btn{
 	margin: 1rem auto .2rem;
 }
 
-.atten_list li.active .left .img:after,.my_bill_box .left .img.active:after{
+.atten_list li.active .left .img:after,.my_bill_box .left .img.active:after,.message_item.active .mi_left:after{
 	content: "V";
 	display: block;
 	width: .36rem;
@@ -115,6 +115,112 @@ a.submit_btn{
 	right: -.07rem;
 	bottom: -.05rem;
 }
+
+
+
+.ip_process_ul{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	color: #282828;
+	font-size: .22rem;
+	padding-top: .3rem;
+}
+.ip_process_ul li{
+	width: 20%;
+	height: 100%;
+	position: relative;
+}
+.ip_process_ul li div{
+	position: relative;
+}
+.ip_process_ul li div:after{
+	content: "";
+	width: .7rem;
+	height: .06rem;
+	background: #707070;
+	position: absolute;
+	right: .1rem;
+	bottom: .15rem;
+}
+.ip_process_ul li:last-child div:after{
+	display: none;
+}
+.ip_process_ul li.active:before{
+	content: "";
+	width: .32rem;
+	height: .16rem;
+	background: url(../images/down1.png) center center no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: .25rem;
+	top: -.3rem;
+}
+.ip_process_ul li.active:last-child:before{
+	left: 0;
+}
+.ip_process_ul li p{
+	width: 1rem;
+}
+.ip_process_ul li span{
+	display: block;
+	margin: .1rem 0 0 0;
+	width: .45rem;
+	height: .42rem;
+	position: relative;
+}
+.ip_process_ul li.cancle span:after{
+	content: "";
+	width: .34rem;
+	height: .34rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/cancle.png) center center no-repeat;
+	background-size: 100%;
+}
+.ip_process_ul li:first-child span{
+	background: url(../images/invite_process1.png) center center no-repeat;
+	background-size: 100%;	
+}
+.ip_process_ul li.red:first-child span{
+	background: url(../images/invite_process1_on.png) center center no-repeat;
+	background-size: 100%;		
+}
+.ip_process_ul li:nth-child(2) span{
+	background: url(../images/invite_process2.png) center center no-repeat;
+	background-size: 100%;
+}
+.ip_process_ul li.red:nth-child(2) span{
+	background: url(../images/invite_process2_on.png) center center no-repeat;
+	background-size: 100%;		
+}
+.ip_process_ul li:nth-child(3) span{
+	background: url(../images/invite_process3.png) center center no-repeat;
+	background-size: 100%;	
+}
+.ip_process_ul li.red:nth-child(3) span{
+	background: url(../images/invite_process3_on.png) center center no-repeat;
+	background-size: 100%;		
+}
+.ip_process_ul li:nth-child(4) span{
+	background: url(../images/invite_process4.png) center center no-repeat;
+	background-size: 100%;	
+}
+.ip_process_ul li.red:nth-child(4) span{
+	background: url(../images/invite_process4_on.png) center center no-repeat;
+	background-size: 100%;		
+}
+.ip_process_ul li:last-child span{
+	background: url(../images/invite_process5.png) center center no-repeat;
+	background-size: 100%;	
+}
+.ip_process_ul li.red:last-child span{
+	background: url(../images/invite_process5_on.png) center center no-repeat;
+	background-size: 100%;		
+}
+
 
 
 /* 弹框样式 */
@@ -409,6 +515,42 @@ a.submit_btn{
 }
 .send_money_modal .single_ok{
 	margin-top: .3rem;
+}
+.preview_container{
+	position: relative;
+}
+.prev_layer{
+	position: absolute;
+	width: 100%;
+	height: .65rem;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 .2rem;
+	box-sizing: border-box;
+}
+.prev_layer a{
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 .1rem .06rem 0;	
+}
+.prev_layer img{
+	display: inline-block;
+	width: .38rem;
+	height: .32rem;
+	/* margin: 0 .1rem .03rem 0; */
+}
+.photo_preview_modal{
+	display: block;
+	top: -150%;
+	transition: top .5s ease;
+}
+.photo_preview_modal.show{
+	top: 15%;
 }
 
 

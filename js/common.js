@@ -1,7 +1,16 @@
 $(function(){
+	var len = $(".ip_process_ul li").length;
+	for(var i=0;i<len;i++){
+		if($(".ip_process_ul li").eq(i).hasClass("active")){
+			$(".ip_process_ul li").eq(i).addClass("red").prevAll().addClass("red");
+		}
+		if($(".ip_process_ul li").eq(i).hasClass("cancle")){
+			$(".ip_process_ul li").eq(i).addClass("cancle").nextAll().addClass("cancle");
+		}
+	}
 	// 弹框
 	$(".modal_cancle_btn,.modal_box .close_img,.modal_shadow").click(function(){
-		$(".modal_shadow,.modal_box").hide();
+		$(".modal_shadow,.modal_box").removeClass("active");
 	})
 	
 	// 清空输入框

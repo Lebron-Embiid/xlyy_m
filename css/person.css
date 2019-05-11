@@ -1574,6 +1574,7 @@ a.login_out{
 	width: 100%;
 	height: .5rem;
 	outline: none;
+	background: #fff;
 }
 .bi_select_box .bis_item div{
 	position: relative;

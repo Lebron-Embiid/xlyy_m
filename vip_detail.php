@@ -15,6 +15,7 @@
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script src="js/modal.js"></script>
 	<style>
 		body{
@@ -283,6 +284,31 @@
 		<p style="margin-top: .5rem;text-align: center;">您的会员信息必须填满80%，才能使用该功能！</p>
 		<a href="basic_info.php" class="single_ok">立即填写</a>
 	</div>
+	<!-- 图片预览 弹窗 -->
+	<div class="modal_box send_mess_modal photo_preview_modal fix">
+		<div class="swiper-container preview_container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/vip_preview_img.jpg" alt="" class="v_img">
+					<div class="prev_layer">
+						<a href=""><img src="images/love.png" alt=""></a>320
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/vip_preview_img.jpg" alt="" class="v_img">
+					<div class="prev_layer">
+						<a href=""><img src="images/love.png" alt=""></a>330
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/vip_preview_img.jpg" alt="" class="v_img">
+					<div class="prev_layer">
+						<a href=""><img src="images/love.png" alt=""></a>340
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- 发送消息 弹窗 -->
 	<div class="modal_box send_mess_modal fix">
 		<img src="images/vip_preview_img.jpg" alt="" class="v_img">
@@ -313,6 +339,16 @@
 		<p>（您打赏的红包将立刻进入对方的钱包中，对方可以自由选择微信或支付宝进行提现。红包发出后一概不予退还。）</p>
 		<a href="" class="single_ok">发红包</a>
 	</div>
+	<div class="modal_box custom_modal fix" style="top:15%;">
+		<div class="close_img"><img src="images/close.png" alt=""></div>
+		<img src="images/kefu.png" class="img" alt="">
+		<p style="text-align: center;font-size: .22rem;margin-bottom: .4rem;">客服会在24小时之内回答您的问题。</p>
+		<textarea name="" id="" class="textarea" cols="30" rows="10" style="width: 100%;height: 2.3rem;margin-bottom: .4rem;"></textarea>
+		<div class="more_btn_box">
+			<a href="" class="modal_custom_btn active">发送</a>
+			<a href="javascript:void(0);" class="modal_cancle_btn">取消</a>
+		</div>
+	</div>
 	<div class="fixed_mb120"></div>
 	<div class="vip_fixed_footer">
 		<div class="vf_left">
@@ -328,13 +364,19 @@
 			</a>
 		</div>
 		<div class="vf_right">
-			<a href="javascript:void(0);">邀约服务</a>
+			<a href="invite_service.php">邀约服务</a>
 		</div>
 	</div>
 </body>
 <script src="js/common.js"></script>
 <script>
 	$(function(){
+		var swiper = new Swiper('.preview_container',{
+			initialSlide:0,		//默认第1个显示
+			loop: true,			//swiper循环
+			speed: 300,			//轮播滑动开始到结束的时间
+		});
+		
 		$(window).scroll(function(){
 			if($(window).scrollTop() >= $(".vip_detail_banner").height()){
 				$(".header_back").addClass("active");
@@ -344,6 +386,15 @@
 		})
 		
 		var modal = new LModal();
+		// 图片预览
+		$("body").on("click",".img_bg",function(){
+			$(".photo_preview_modal").addClass("show");
+			$(".modal_shadow").addClass("active");
+		})
+		$(".modal_shadow").click(function(){
+			$(".photo_preview_modal").removeClass("show");
+			$(this).removeClass("active");
+		})
 		// 分享
 		$("body").on("click",".share_icon",function(){
 			modal.showModal(".share_modal");
@@ -357,9 +408,10 @@
 			modal.showModal(".send_money_modal");
 		})
 		// 完善信息
-		$(".vip_fixed_footer").on("click",".vf_right",function(){
-			modal.showModal(".fill_use_modal");
-		})
+		// $(".vip_fixed_footer").on("click",".vf_right",function(){
+		// 	modal.showModal(".fill_use_modal");
+		// })
+		
 	})
 </script>
 </html>

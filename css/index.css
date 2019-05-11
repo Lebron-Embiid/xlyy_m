@@ -643,3 +643,345 @@
 	color: #222;
 	font-size: .24rem;
 }
+
+
+
+/* 消息 */
+.message_box{
+	overflow: hidden;
+}
+.message_nav{
+	background: #fff;
+	margin-bottom: .2rem;
+}
+.message_nav li{
+	border-bottom: 1px solid #E7E7E7;
+}
+.message_nav li a{
+	display: flex;
+	overflow: hidden;
+	padding: .2rem;
+	justify-content: flex-start;
+	align-items: center;
+}
+.message_nav li .left{
+	width: 1.6rem;
+}
+.message_nav li .left .icon{
+	width: .72rem;
+	height: .61rem;
+	position: relative;
+	margin: 0 0 .1rem .15rem;
+}
+.message_nav li .left .icon img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.message_nav li .left .icon span{
+	position: absolute;
+	width: .27rem;
+	height: .27rem;
+	border-radius: 50%;
+	color: #fff;
+	font-size: .22rem;
+	text-align: center;
+	background: #ba0f2e;
+	right: -.1rem;
+	top: -.05rem;
+}
+.message_nav li .left p{
+	color: #222;
+	font-size: .24rem;
+}
+.message_nav li .right{
+	width: 78%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.message_nav li .right h5{
+	/* width: 80%; */
+	color: #000;
+	font-size: .22rem;
+}
+.message_nav li .right .next{
+	display: block;
+	width: .16rem;
+}
+
+.message_item{
+	border-bottom: 1px solid #E7E7E7;
+}
+.message_item a{
+	background: #fff;
+	padding: .2rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.message_item:first-of-type{
+	border-top: 1px solid #E7E7E7;
+}
+.message_item .mi_left{
+	position: relative;
+	margin-right: .2rem;
+}
+.message_item .mi_left img{
+	display: block;
+	width: 1.46rem;
+	height: 1.53rem;
+}
+.message_item .mi_right{
+	overflow: hidden;
+	width: 78%;
+}
+.message_item .mi_right h4{
+	color: #222;
+	font-size: .24rem;
+	/* margin: .1rem 0; */
+	overflow : hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: .1rem 0 .7rem;
+}
+.message_item .mi_right p{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	color: #222;
+	font-size: .22rem;
+}
+.message_item .mi_right p .mr_status{
+	font-size: .24rem;
+}
+.message_item .mi_right p .mr_new{
+	display: block;
+	width: .42rem;
+	height: .42rem;
+	line-height: .42rem;
+	color: #fff;
+	background: #ba0f2e;
+	text-align: center;
+}
+.message_item .mi_right p .mr_last{
+	display: block;
+	width: .42rem;
+}
+.message_item .mi_right p .mr_del{
+	display: block;
+	width: .22rem;
+}
+
+
+/* 私聊详情 */
+.chat_box{
+	padding: 0 .2rem .5rem;
+	overflow: hidden;
+	margin-bottom: .95rem;
+}
+.chat_item{
+	margin-top: .3rem;
+}
+.chat_item h6{
+	color: #616161;
+	font-size: .2rem;
+	text-align: center;
+}
+.chat_item h4{
+	color: #000;
+	font-size: .22rem;
+	margin: .05rem 0 .1rem;
+	text-align: left;
+}
+.chat_item .chat_content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.chat_item .chat_content .ci_left{
+	margin-right: .1rem;
+}
+.chat_item .chat_content .ci_left img{
+	display: block;
+	width: 1.46rem;
+	height: 1.53rem;
+}
+.chat_item .chat_content .ci_right{
+	background: #fff;
+	padding: .2rem;
+	width: 4.1rem;
+	min-height: 1.53rem;
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+}
+.chat_item .chat_content .ci_right p{
+	color: #000;
+	font-size: .22rem;
+}
+.chat_item.active h4{
+	text-align: right;
+}
+.chat_item.active .chat_content{
+	flex-direction: row-reverse;
+}
+.chat_item.active .chat_content .ci_left{
+	margin: 0 0 0 .1rem;
+}
+.chat_item.active .chat_content .ci_right{
+	background: #ffcc33;
+}
+
+
+.fixed_form_reply{
+	position: fixed;
+	width: 100%;
+	height: .95rem;
+	border-top: 1px solid #C0C0C0;
+	box-sizing: border-box;
+	padding: .1rem .2rem;
+	background: #fff;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.fixed_form_reply form{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fixed_form_reply .text{
+	display: block;
+	width: 78%;
+	height: .7rem;
+	padding: 0 .2rem;
+	background: #fff;
+	box-sizing: border-box;
+	outline: none;
+	color: #5e5e5e;
+	font-size: .24rem;
+}
+.fixed_form_reply .reply_btn{
+	display: block;
+	width: 20%;
+	height: .7rem;
+	color: #fff;
+	font-size: .28rem;
+	background: #cc0000;
+	outline: none;
+	border: 0;
+}
+
+
+/* 邀约对象 */
+.invite_ser_box .vdc_content_box h4{
+	padding: .3rem .3rem .15rem;
+}
+.invite_obj,.invite_remark,.invite_process,.invite_platform,.invite_remind{
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+	background: #fff;
+	padding: .2rem .3rem;
+}
+.invite_obj input{
+	display: block;
+	width: 100%;
+	background: none;
+	border: 0;
+	color: #545353;
+	font-size: .24rem;
+}
+.isb_detail{
+	padding: 0;
+}
+.isb_detail li{
+	padding: .1rem .3rem;
+}
+.isb_detail .vl_right{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: #545353;
+	font-size: .22rem;
+}
+.isb_detail .vl_right .time_img{
+	display: block;
+	width: .65rem;
+	height: .6rem;
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	margin-left: .1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.isb_detail .vl_right .time_img img{
+	display: block;
+	width: .34rem;
+	height: .38rem;
+}
+.isb_detail .vl_right p{
+	width: 1.8rem;
+	height: .6rem;
+	line-height: .6rem;
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	padding-left: .15rem;
+}
+.isb_detail .vl_right .isb_next{
+	display: block;
+	width: .16rem;
+	margin-left: .2rem;
+}
+.isb_detail .vl_right .isb_phone{
+	text-align: right;
+	border: 0;
+	outline: none;
+}
+.isb_till{
+	color: #8b8b8b;
+	font-size: .2rem;
+	padding: .1rem .4rem;
+}
+
+.invite_remark textarea{
+	display: block;
+	width: 100%;
+	height: 1.6rem;
+	border: 0;
+	outline: none;
+	resize: none;
+	color: #545353;
+	font-size: .24rem;
+}
+
+
+.invite_platform{
+	padding: .2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.invite_platform li{
+	color: #303030;
+	text-align: center;	
+}
+.invite_platform li img{
+	display: block;
+	width: .57rem;
+	margin: 0 auto .1rem;
+}
+.invite_platform li h5{
+	font-size: .24rem;
+	margin-bottom: .1rem;
+}
+.invite_platform li p{
+	font-size: .2rem;
+}
+
+.invite_remind{
+	color: #303030;
+	font-size: .2rem;
+}
