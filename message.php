@@ -30,7 +30,7 @@
 	<div class="message_box">
 		<ul class="message_nav">
 			<li>
-				<a href="">
+				<a href="window_mess.php">
 					<div class="left">
 						<div class="icon"><img src="images/message_icon1.png" alt=""><span>1</span></div>
 						<p>系统消息</p>
@@ -42,7 +42,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="invite_mess.php">
 					<div class="left">
 						<div class="icon"><img src="images/message_icon2.png" alt=""><span>2</span></div>
 						<p>邀约信息</p>
@@ -54,7 +54,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="love.php">
 					<div class="left">
 						<div class="icon"><img src="images/message_icon3.png" alt=""><span>2</span></div>
 						<p>心动与关注</p>
@@ -66,7 +66,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="vip_mess.php">
 					<div class="left">
 						<div class="icon"><img src="images/message_icon4.png" alt=""><span>3</span></div>
 						<p>会员通知</p>

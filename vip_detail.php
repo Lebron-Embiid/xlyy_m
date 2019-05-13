@@ -233,7 +233,7 @@
 			</ul>
 		</div>
 		<div class="vdc_content_box">
-			<h4>用户咨询<a href="common_problem.php">更多&gt;</a></h4>
+			<h4>用户咨询<a href="">更多&gt;</a></h4>
 			<div class="vdc_user_advisory">
 				<div class="user_adv_item">
 					<div class="ua_left">
@@ -307,6 +307,8 @@
 					</div>
 				</div>
 			</div>
+			<div class="swiper-button-prev"><img src="images/left_arrow.png" alt=""></div>
+			<div class="swiper-button-next"><img src="images/right_arrow.png" alt=""></div>
 		</div>
 	</div>
 	<!-- 发送消息 弹窗 -->
@@ -372,9 +374,11 @@
 <script>
 	$(function(){
 		var swiper = new Swiper('.preview_container',{
-			initialSlide:0,		//默认第1个显示
-			loop: true,			//swiper循环
+			initialSlide: 0,		//默认第1个显示
+			loop: false,			//swiper循环
 			speed: 300,			//轮播滑动开始到结束的时间
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
 		});
 		
 		$(window).scroll(function(){

@@ -55,8 +55,8 @@
 	<div class="modal_box login_out_modal">
 		<p style="margin: .6rem 0 .4rem;text-align: center;font-size: .22rem;">您是否确认退出？</p>
 		<div class="more_btn_box">
-			<a href="javascript:void(0);" class="login_out_btn">确定</a>
-			<a href="javascript:void(0);" class="modal_cancle_btn active">取消</a>
+			<a href="javascript:void(0);" class="login_out_btn active">确定</a>
+			<a href="javascript:void(0);" class="modal_cancle_btn">取消</a>
 		</div>
 	</div>
 	<?php include "footer.php"; ?>

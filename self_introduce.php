@@ -34,6 +34,11 @@
 			<textarea name="self" id="" style="height: 4.9rem;" cols="30" rows="10"></textarea>
 			<p>请输入25-250个字符</p>
 		</div>
+		<div class="basic_title"><span></span>寻找</div>
+		<div class="sib_text">
+			<textarea name="find" id="" style="height: 4.9rem;" cols="30" rows="10"></textarea>
+			<p>请输入25-250个字符</p>
+		</div>
 	</div>
 	<div class="modal_shadow"></div>
 	<div class="modal_box must_modal fix">

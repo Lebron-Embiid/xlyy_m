@@ -100,7 +100,7 @@ a.submit_btn{
 	margin: 1rem auto .2rem;
 }
 
-.atten_list li.active .left .img:after,.my_bill_box .left .img.active:after,.message_item.active .mi_left:after{
+.atten_list li.active .left .img:after,.my_bill_box .left .img.active:after,.message_item.active .mi_left:after,.result_item.active .img:after,.invite_mess_box .imb_item.active .img:after,.visiter_item.active .img:after{
 	content: "V";
 	display: block;
 	width: .36rem;

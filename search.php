@@ -147,7 +147,7 @@
 				<label for="type4"><input type="checkbox" name="type" id="type4">出席商务场合</label>
 			</div>
 		</div>
-		<a href="" class="submit_btn">搜索</a>
+		<a href="result.php" class="submit_btn">搜索</a>
 	</div>
 	<div class="modal_shadow"></div>
 	<div class="modal_box must_modal fix">
