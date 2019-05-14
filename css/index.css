@@ -968,13 +968,19 @@
 	width: .34rem;
 	height: .38rem;
 }
-.isb_detail .vl_right p{
+.isb_detail .vl_right .time_txt{
 	width: 1.8rem;
 	height: .6rem;
 	line-height: .6rem;
 	border: 1px solid #E5E5E5;
 	box-sizing: border-box;
 	padding-left: .15rem;
+	outline: none;
+}
+.isb_detail .vl_right .ser_txt{
+	text-align: right;
+	border: 0;
+	outline: none;
 }
 .isb_detail .vl_right .isb_next{
 	display: block;
