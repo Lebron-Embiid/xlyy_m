@@ -43,7 +43,27 @@
 			<a href=""><img src="images/love1.png" alt=""></a>
 		</div>
 	</div>
+	<div class="modal_shadow"></div>
+	<div class="modal_box red_money_modal">
+		<div class="close_img"><img src="images/close.png" alt=""></div>
+		<p style="text-align: center;font-size: .28rem;">收到红包</p>
+		<img src="images/window_mess1.png" style="display: block;width: 1rem;margin: .3rem auto;" alt="">
+		<p style="text-align: center;">亲爱的用户！</p>
+		<p style="text-align: center;">会员“高富帅”发给你一个红包~</p>
+		<a href="record.php" style="width: 60%;background: #cc0000;" class="single_ok">查看</a>
+	</div>
 	<?php include "footer.php"; ?>
 </body>
 <script src="js/common.js"></script>
+<script>
+	$(function(){
+		var modal = new LModal();
+		$("body").on("click",".submit_btn",function(){
+			modal.showModal(".red_money_modal");
+		})
+		$(".single_ok").click(function(){
+			modal.cancleModal(".red_money_modal");
+		})
+	})
+</script>
 </html>

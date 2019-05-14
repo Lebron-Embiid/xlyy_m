@@ -23,7 +23,7 @@
 	</div>
 	<div class="mt80"></div>
 	<div class="invite_mess_box love_atten_box vip_mess_box">
-		<div class="imb_item">
+		<div class="imb_item new">
 			<a href="">
 				<div class="left">
 					<div class="img"><img src="images/vip_mess_img1.png" alt=""></div>
@@ -38,7 +38,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="imb_item">
+		<div class="imb_item new">
 			<a href="">
 				<div class="left">
 					<div class="img"><img src="images/vip_mess_img2.png" alt=""></div>

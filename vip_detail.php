@@ -80,25 +80,25 @@
 			<ul class="vcb_service">
 				<li>
 					<div class="vs_left"><img src="images/vip_ser_icon1.png" alt=""><span>闹钟服务</span></div>
-					<a href="">
+					<a href="provide_services.php">
 						<div class="vs_right">10元/次<img src="images/three.png" alt=""><div>
 					</a>
 				</li>
 				<li>
 					<div class="vs_left"><img src="images/vip_ser_icon2.png" alt=""><span>假扮女友</span>不前往异地</div>
-					<a href="">
+					<a href="provide_services.php">
 						<div class="vs_right">1000元/天<img src="images/three.png" alt=""><div>
 					</a>
 				</li>
 				<li>
 					<div class="vs_left"><img src="images/vip_ser_icon3.png" alt=""><span>旅游陪伴</span>可前往异地</div>
-					<a href="">
+					<a href="provide_services.php">
 						<div class="vs_right">2000元/天<img src="images/three.png" alt=""><div>
 					</a>
 				</li>
 				<li>
 					<div class="vs_left"><img src="images/vip_ser_icon4.png" alt=""><span>商务场合</span>可前往异地</div>
-					<a href="">
+					<a href="provide_services.php">
 						<div class="vs_right">1000元/天<img src="images/three.png" alt=""><div>
 					</a>
 				</li>
@@ -304,6 +304,14 @@
 					<img src="images/vip_preview_img.jpg" alt="" class="v_img">
 					<div class="prev_layer">
 						<a href=""><img src="images/love.png" alt=""></a>340
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/vip_preview_img.jpg" alt="" class="v_img">
+					<div class="lock_layer">
+						<h6>隐私照片</h6>
+						<img src="images/lock.png" alt="">
+						<p><a href="">申请查看隐私照片</a></p>
 					</div>
 				</div>
 			</div>

@@ -34,6 +34,88 @@
 	</div>
 	<div class="mt80"></div>
 	<div class="basic_info_box search_box">
+		<!-- 女会员 -->
+		<!-- <div class="bi_select_box">
+			<div class="bis_item">
+				<span>所在地</span>
+				<div>
+					
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>年龄</span>
+				<div>
+					<select name="age" id="">
+						<option value="">25</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>身高</span>
+				<div>
+					<select name="height" id="">
+						<option value="">170cm</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>体重</span>
+				<div>
+					<select name="weight" id="">
+						<option value="">60kg</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>学历</span>
+				<div>
+					<select name="education" id="">
+						<option value="">大专</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>职业</span>
+				<div>
+					<select name="job" id="">
+						<option value="">企业高管</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>是否吸烟</span>
+				<div>
+					<select name="job" id="">
+						<option value="">是</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>是否喝酒</span>
+				<div>
+					<select name="job" id="">
+						<option value="">是</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>年收入</span>
+				<div>
+					<select name="smoke" id="">
+						<option value="">50-100万</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>净值</span>
+				<div>
+					<select name="drink" id="">
+						<option value="">1000万+</option>
+					</select>
+				</div>
+			</div>
+		</div> -->
+		<!-- 男会员 -->
 		<div class="bi_select_box">
 			<div class="bis_item">
 				<span>所在地</span>
@@ -115,7 +197,7 @@
 			</div>
 		</div>
 		<div class="search_label_box">
-			<h4>身材标签</h4>
+			<h4>身材标签<span>（最多选择3个）</span></h4>
 			<ul class="search_ul figure_ul">
 				<li>温柔和婉</li>
 				<li>活泼可爱</li>
@@ -126,7 +208,7 @@
 				<li>善解人意</li>
 				<li>善解人意</li>
 			</ul>
-			<h4>性格标签</h4>
+			<h4>性格标签<span>（最多选择3个）</span></h4>
 			<ul class="search_ul char_ul">
 				<li>温柔和婉</li>
 				<li>活泼可爱</li>
@@ -167,10 +249,10 @@
 				$(this).removeClass("active");
 				figure_arr.pop();
 			}else{
-				// if(figure_arr.length < 3){
+				if(figure_arr.length < 3){
 					figure_arr.push(idx);
 					$(this).addClass("active");
-				// }
+				}
 			}
 		})
 		$(".char_ul").on("click","li",function(){
@@ -179,10 +261,10 @@
 				$(this).removeClass("active");
 				char_arr.pop();
 			}else{
-				// if(char_arr.length < 3){
+				if(char_arr.length < 3){
 					char_arr.push(idx);
 					$(this).addClass("active");
-				// }
+				}
 			}
 		})
 		

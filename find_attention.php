@@ -29,13 +29,13 @@
 	</ul>
 	<div class="mt80"></div>
 	<div class="find_attention_box">
-		<div class="find_attention_item">
+		<div class="find_attention_item active">
 			<a href="">
 				<div class="img"><img src="images/atten_girl_img1.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>
 		</div>
-		<div class="find_attention_item">
+		<div class="find_attention_item active">
 			<a href="">
 				<div class="img"><img src="images/atten_girl_img2.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>

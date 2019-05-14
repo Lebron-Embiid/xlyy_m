@@ -19,6 +19,16 @@
 		body{
 			background: #f5f5f5;
 		}
+		.ci_right_box h5{
+			color: #040000;
+			font-size: .22rem;
+			margin-bottom: .05rem;
+		}
+		.ci_right_box h5 img{
+			display: inline-block;
+			width: .29rem;
+			margin-left: .1rem;
+		}
 	</style>
 </head>
 <body>
@@ -70,12 +80,28 @@
 					<div class="ci_left">
 						<img src="images/message_img3.jpg" alt="">
 					</div>
+					<div class="ci_right_box">
+						<h5>我的投诉<img src="images/history_icon6.png" alt=""></h5>
+						<div class="ci_right" style="min-height: 1.2rem;">
+							<p>您现在可以对该次邀约进行：</p>
+						</div>
+						<p style="color: #040000;font-size: .2rem;margin-top: .05rem;">我们已收到您的投诉，我们将进行核实</p>
+					</div>
+				</div>
+			</div>
+			<div class="chat_item active">
+				<h6>2018-10-23 12:23</h6>
+				<h4>凌苗苗</h4>
+				<div class="chat_content">
+					<div class="ci_left">
+						<img src="images/message_img3.jpg" alt="">
+					</div>
 					<div class="ci_right">
 						<div class="rcb_box">
 							<p>您现在可以对该次邀约进行：</p>
 							<ul class="ci_btn">
-								<li class="active"><a href="javascript:void(0);" class="rcb_eval">评价</a></li>
-								<li><a href="javascript:void(0);" class="rcb_complaint">投诉</a></li>
+								<li class="active"><a href="evaluation.php" class="rcb_eval">评价</a></li>
+								<li><a href="complaint.php" class="rcb_complaint">投诉</a></li>
 							</ul>
 						</div>
 					</div>

@@ -26,7 +26,8 @@
 	<div class="mt80"></div>
 	<div class="basic_info_box">
 		<div class="basic_title"><span></span>标记*号的为必填项</div>
-		<div class="bi_select_box">
+		<!-- 男会员 -->
+		<!-- <div class="bi_select_box">
 			<div class="bis_item no_down">
 				<span>会员名*</span>
 				<div><input type="text" name="vip_name" id="vip_name"></div>
@@ -109,6 +110,105 @@
 					</select>
 				</div>
 			</div>
+		</div> -->
+		<!-- 女会员 -->
+		<div class="bi_select_box">
+			<div class="bis_item no_down">
+				<span>会员名*</span>
+				<div><input type="text" name="vip_name" id="vip_name"></div>
+			</div>
+			<div class="bis_item">
+				<span>年龄*</span>
+				<div>
+					<select name="age" id="">
+						<option value="">25</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>所在地*</span>
+				<div>
+					
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>职业*</span>
+				<div>
+					<select name="job" id="">
+						<option value="">企业高管</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>身高*</span>
+				<div>
+					<select name="height" id="">
+						<option value="">170cm</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>体重*</span>
+				<div>
+					<select name="weight" id="">
+						<option value="">60kg</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>学历*</span>
+				<div>
+					<select name="education" id="">
+						<option value="">大专</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>年收入*</span>
+				<div>
+					<select name="income" id="">
+						<option value="">10-50万</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>发色*</span>
+				<div>
+					<select name="hair_color" id="">
+						<option value="">黄色</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>发型*</span>
+				<div>
+					<select name="hair" id="">
+						<option value="">直发</option>
+					</select>
+				</div>
+			</div>
+			<div class="bis_item">
+				<span>是否喝酒*</span>
+				<div>
+					<select name="drink" id="">
+						<option value="">几乎每天小酌，但不喝醉</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="basic_label_box">
+			<div class="basic_title"><span></span>身材标签*（最多3个）</div>
+			<!-- <h4>身材标签*（最多3个）</h4> -->
+			<ul class="search_ul figure_ul">
+				<li>温柔和婉</li>
+				<li>活泼可爱</li>
+				<li>善解人意</li>
+				<li>善解人意</li>
+				<li>温柔和婉</li>
+				<li>活泼可爱</li>
+				<li>善解人意</li>
+				<li>善解人意</li>
+			</ul>
 		</div>
 	</div>
 	<div class="modal_shadow"></div>
@@ -127,6 +227,20 @@
 			if(vip_name == ""){
 				$("#must").html($("#vip_name").parent().siblings().html());
 				modal.showModal(".must_modal");
+			}
+		})
+		
+		var label_arr = [];
+		$(".figure_ul").on("click","li",function(){
+			var idx = $(this).index();
+			if($(this).hasClass("active")){
+				$(this).removeClass("active");
+				label_arr.pop();
+			}else{
+				if(label_arr.length < 3){
+					label_arr.push(idx);
+					$(this).addClass("active");
+				}
 			}
 		})
 	})

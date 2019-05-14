@@ -49,10 +49,23 @@
 			<h4>凌苗苗</h4>
 			<div class="chat_content">
 				<div class="ci_left">
-					<img src="images/message_img2.jpg" alt="">
+					<img src="images/message_img3.jpg" alt="">
 				</div>
 				<div class="ci_right">
 					<p>亲，我希望能够看到你的隐私图片，可以吗？</p>
+				</div>
+			</div>
+		</div>
+		<div class="chat_item active">
+			<h6>2018-10-23 12:23</h6>
+			<h4>王总</h4>
+			<div class="chat_content">
+				<div class="ci_left">
+					<img src="images/message_img1.jpg" alt="">
+				</div>
+				<div class="ci_right">
+					<p>我已经同意您的申请查看隐私照片的申请。</p>
+					<!-- <p>我已经拒绝您的申请查看隐私照片的申请。</p> -->
 				</div>
 			</div>
 		</div>

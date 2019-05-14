@@ -1624,6 +1624,22 @@ a.login_out{
 	display: none;
 }
 
+.basic_label_box{
+	margin: .3rem 0;
+	padding-bottom: .5rem;
+}
+.basic_label_box .search_ul{
+	padding: 0 .2rem;
+}
+.basic_label_box .search_ul li{
+	border-radius: .2rem;
+}
+.basic_label_box .search_ul li.active{
+	background: #F3B745;
+	color: #fff;
+	border-color: #F3B745;
+}
+
 
 /* 预约历史 */
 .my_history_box{
@@ -1756,6 +1772,9 @@ a.login_out{
 	background: #fff;
 	border: 1px solid #E7E7E7;
 	margin-bottom: .1rem;
+}
+.search_box h4 span{
+	font-size: .22rem;
 }
 .search_ul{
 	display: flex;
@@ -1894,6 +1913,9 @@ a.login_out{
 .result_item,.invite_mess_box .imb_item{
 	position: relative;	
 	border-bottom: 1px solid #ECECEC;
+	background: #F5F5F5;
+}
+.result_item{
 	background: #fff;
 }
 /* .result_item:last-of-type,.invite_mess_box .imb_item:last-of-type{
@@ -1912,6 +1934,9 @@ a.login_out{
 	display: flex;
 	justify-content: flex-start;
 	align-items: stretch;
+}
+.invite_mess_box .imb_item.new{
+	background: #fff;
 }
 .invite_mess_box .imb_item.finish{
 	background: #e0e0e0;
@@ -1946,7 +1971,7 @@ a.login_out{
 	background: url(../images/pay.png) center center no-repeat;
 	background-size: 100%;	
 }
-.invite_mess_box .imb_item .left{	
+.invite_mess_box .imb_item .left,.result_item .img{	
 	margin-right: .2rem;
 }
 .result_item .img,.invite_mess_box .imb_item .img{
@@ -2111,4 +2136,52 @@ a.login_out{
 .wmi_content a{
 	color: #ba0f2e;
 	font-size: .22rem;
+}
+
+
+/* 评价 */
+.evaluation_box{
+	font-size: .22rem;
+	background: #fff;
+}
+.evaluation_box .modal_info_box{
+	padding: .2rem;
+	padding-bottom: .1rem;
+	border-bottom: 1px solid #eee;
+}
+.eval_star_box{
+	overflow: hidden;
+	background: #000;
+	padding: .2rem;
+	color: #fff;
+}
+.eval_star_item{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: .3rem;
+}
+.eval_star_item span{
+	width: 1.4rem;
+	font-size: .22rem;
+}
+.eval_star_item ul,
+.eval_star_item textarea{
+	display: block;
+	width: 80%;
+}
+#star{overflow: hidden;}
+#star li{float:left;overflow: hidden;padding-right: .15rem;}
+#star li a{display: block;width:.35rem;height: .33rem;cursor:pointer;background:url(../images/star1.png) no-repeat;background-size: 100%;}
+#star li.on a{background-position:0 -.45rem;}
+
+.eval_star_item textarea{
+	outline: none;
+	resize: none;
+	border: 1px solid #F9C732;
+	color: #000;
+	font-size: .22rem;
+	padding: .2rem;
+	box-sizing: border-box;
+	height: 1.65rem;
 }

@@ -48,8 +48,23 @@
 				</select>
 			</div>
 		</div>
+		<!-- 女会员 -->
+		<div class="result_item">
+			<a href="vip_detail.php">
+				<div class="img"><img src="images/girl_avatar_img2.jpg" alt=""></div>
+				<div class="right">
+					<ul>
+						<li>王小小</li>
+						<li>所在地：广州市</li>
+						<li>年收入：100万</li>
+						<li>净值：1300万</li>
+					</ul>
+				</div>
+			</a>
+		</div>
+		<!-- 男会员 -->
 		<div class="result_item active top">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
 				<div class="right">
 					<ul>
@@ -63,7 +78,7 @@
 			</a>
 		</div>
 		<div class="result_item active top">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
 				<div class="right">
 					<ul>
@@ -77,7 +92,7 @@
 			</a>
 		</div>
 		<div class="result_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
 				<div class="right">
 					<ul>
@@ -91,7 +106,7 @@
 			</a>
 		</div>
 		<div class="result_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
 				<div class="right">
 					<ul>
@@ -105,7 +120,7 @@
 			</a>
 		</div>
 		<div class="result_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
 				<div class="right">
 					<ul>
@@ -118,8 +133,8 @@
 				</div>
 			</a>
 		</div>
-		<div class="result_item">
-			<a href="">
+		<div class="result_item new">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
 				<div class="right">
 					<ul>
