@@ -29,36 +29,42 @@
 	</ul>
 	<div class="mt80"></div>
 	<div class="recent_visiter_box">
-		<div class="visiter_item active">
-			<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
-			<div class="right">
-				<h5>小青<span>上午11:30</span></h5>
-				<h6>28、江苏省盐城市</h6>
-				<p>期待奢华的生活方式</p>
-				<span class="see">小青查看了您的个人资料</span>
+		<a href="vip_detail.php">
+			<div class="visiter_item active">
+				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
+				<div class="right">
+					<h5>小青<span>上午11:30</span></h5>
+					<h6>28、江苏省盐城市</h6>
+					<p>期待奢华的生活方式</p>
+					<span class="see">小青查看了您的个人资料</span>
+				</div>
 			</div>
-		</div>
+		</a>
 		<div class="dont_look">
-			<p>以下最近来访的会员只有<a href="">升级</a>才能看到哦~~</p>
+			<p>以下最近来访的会员只有<a href="buy_primary_vip.php">升级</a>才能看到哦~~</p>
 		</div>
-		<div class="visiter_item active">
-			<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
-			<div class="right">
-				<h5>小青<span>上午11:30</span></h5>
-				<h6>28、江苏省盐城市</h6>
-				<p>期待奢华的生活方式</p>
-				<span class="see">小青查看了您的个人资料</span>
+		<a href="javascript:void(0);">
+			<div class="visiter_item active">
+				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
+				<div class="right">
+					<h5>小青<span>上午11:30</span></h5>
+					<h6>28、江苏省盐城市</h6>
+					<p>期待奢华的生活方式</p>
+					<span class="see">小青查看了您的个人资料</span>
+				</div>
 			</div>
-		</div>
-		<div class="visiter_item">
-			<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
-			<div class="right">
-				<h5>小青<span>上午11:30</span></h5>
-				<h6>28、江苏省盐城市</h6>
-				<p>期待奢华的生活方式</p>
-				<span class="see">小青查看了您的个人资料</span>
+		</a>
+		<a href="javascript:void(0);">
+			<div class="visiter_item">
+				<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
+				<div class="right">
+					<h5>小青<span>上午11:30</span></h5>
+					<h6>28、江苏省盐城市</h6>
+					<p>期待奢华的生活方式</p>
+					<span class="see">小青查看了您的个人资料</span>
+				</div>
 			</div>
-		</div>
+		</a>
 	</div>
 	<?php include "footer.php"; ?>
 </body>

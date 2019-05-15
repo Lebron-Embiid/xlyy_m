@@ -24,7 +24,7 @@
 	<div class="atten_box">
 		<div class="atten_till">
 			<div><span></span>已关注会员10/10</div>
-			<p>关注人数已到上限，升级关注更多</p>
+			<a href="buy_primary_vip.php"><p>关注人数已到上限，升级关注更多</p></a>
 		</div>
 		<ul class="atten_list">
 			<li class="active">

@@ -39,12 +39,12 @@
 				<a href="">咨询</a>
 			</li>
 			<li>
-				<span>首页置顶</span>
+				<span>搜索结果页面置顶</span>
 				<p><img src="images/ok2.png" alt="">已置顶</p>
 				<a href="">咨询</a>
 			</li>
 			<li>
-				<span>首页置顶</span>
+				<span>发现页面置顶</span>
 				<p><img src="images/ok1.png" alt="">未置顶</p>
 				<a href="">咨询</a>
 			</li>

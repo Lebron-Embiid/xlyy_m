@@ -32,7 +32,7 @@
 			</div>
 			<div class="flt_right">
 				<p>置顶会员</p>
-				<a href="">申请置顶</a>
+				<a href="top.php">申请置顶</a>
 			</div>
 		</div>
 		<div class="find_layer_bottom">

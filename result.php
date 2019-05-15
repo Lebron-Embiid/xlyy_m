@@ -35,7 +35,7 @@
 	<div class="header_back">
 		<a href="javascript:history.go(-1);" class="left_back"><img src="images/back.png" alt=""></a>
 		<h2>搜索结果</h2>
-		<a href="" class="right_word">我要置顶</a>
+		<a href="top.php" class="right_word">我要置顶</a>
 	</div>
 	<div class="mt80"></div>
 	<div class="result_box">

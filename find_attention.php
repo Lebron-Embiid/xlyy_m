@@ -30,49 +30,49 @@
 	<div class="mt80"></div>
 	<div class="find_attention_box">
 		<div class="find_attention_item active">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/atten_girl_img1.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>
 		</div>
 		<div class="find_attention_item active">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/atten_girl_img2.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>
 		</div>
 		<div class="find_attention_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/atten_girl_img3.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>
 		</div>
 		<div class="find_attention_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/atten_girl_img4.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>
 		</div>
 		<div class="find_attention_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/atten_girl_img5.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>
 		</div>
 		<div class="find_attention_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/atten_girl_img6.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>
 		</div>
 		<div class="find_attention_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/atten_girl_img7.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>
 		</div>
 		<div class="find_attention_item">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="img"><img src="images/atten_girl_img8.jpg" alt=""></div>
 				<p>素之林<span><img src="images/love2.png" alt="">30</span></p>
 			</a>

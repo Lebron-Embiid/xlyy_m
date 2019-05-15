@@ -41,7 +41,7 @@
 			</li>
 			<div class="toLevel_box">
 				<p>普通用户只能看到最近一位粉丝的信息，如果您希望查看更多，请升级</p>
-				<a href="" class="top_vip_btn">立即升级</a>
+				<a href="buy_high_vip.php" class="top_vip_btn">立即升级</a>
 			</div>
 			<li>
 				<div class="left">
