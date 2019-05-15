@@ -24,7 +24,7 @@
 	<div class="mt80"></div>
 	<div class="invite_mess_box love_atten_box">
 		<div class="imb_item active new">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="left">
 					<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
 				</div>
@@ -39,7 +39,7 @@
 			</a>
 		</div>
 		<div class="imb_item active new">
-			<a href="">
+			<a href="vip_detail.php">
 				<div class="left">
 					<div class="img"><img src="images/girl_avatar_img1.jpg" alt=""></div>
 				</div>

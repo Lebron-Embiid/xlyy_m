@@ -233,7 +233,7 @@
 			</ul>
 		</div>
 		<div class="vdc_content_box">
-			<h4>用户咨询<a href="">更多&gt;</a></h4>
+			<h4>用户咨询<!-- <a href="">更多&gt;</a> --></h4>
 			<div class="vdc_user_advisory">
 				<div class="user_adv_item">
 					<div class="ua_left">
@@ -322,7 +322,7 @@
 	<!-- 发送消息 弹窗 -->
 	<div class="modal_box send_mess_modal fix">
 		<img src="images/vip_preview_img.jpg" alt="" class="v_img">
-		<textarea name="send_mess" id="" class="textarea" cols="30" rows="10"></textarea>
+		<textarea name="send_mess" id="" class="textarea" placeholder="请输入消息" cols="30" rows="10"></textarea>
 		<div class="more_btn_box">
 			<a href="" class="modal_send_btn active">发送</a>
 			<a href="javascript:void(0);" class="modal_cancle_btn">取消</a>

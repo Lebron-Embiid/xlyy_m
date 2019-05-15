@@ -126,13 +126,13 @@
 							<span></span>
 						</div>
 					</li>
-					<li class="cancle">
+					<li>
 						<div>
 							<p>协商价格</p>
 							<span></span>
 						</div>
 					</li>
-					<li class="cancle">
+					<li>
 						<div>
 							<p>确认支付方式</p>
 							<span></span>
