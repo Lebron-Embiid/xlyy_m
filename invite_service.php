@@ -284,38 +284,36 @@
 		    }
 		    obj.childs=_data2;
 		    _data.push(obj)
+			
+			
+			// 时
+			var _data4 = [];
+			for(var t=0;t<=23;t++){
+				var obj4 = {};
+				if(t<9){
+				    obj4.value='0'+(t);
+				}else{
+				    obj4.value=t;
+				}
+				_data4.push(obj4)
+				obj3.childs=_data4;
+			}
+			
+			// 分
+			var _data5 = [];
+			for(var t=0;t<=59;t++){
+				var obj5 = {};
+				if(t<9){
+				    obj5.value='0'+(t);
+				}else{
+				    obj5.value=t;
+				}
+				_data5.push(obj5)
+				obj4.childs=_data5;
+			}
+			var _dataAll = _data;
 		}
 		
-		var _dataAll = [];
-		// 时
-		var _data4 = [];
-		for(var t=0;t<=23;t++){
-			var obj4 = {};
-			if(t<9){
-			    obj4.value='0'+(t);
-			}else{
-			    obj4.value=t;
-			}
-			obj3.childs=_data4;
-			_data3.push(obj3)
-		}
-		obj3.childs=_data3;
-		_data.push(obj3);
-		// 分
-		var _data5 = [];
-		for(var t=0;t<=59;t++){
-			var obj5 = {};
-			if(t<9){
-			    obj5.value='0'+(t);
-			}else{
-			    obj5.value=t;
-			}
-			obj4.childs=_data5;
-			_data4.push(obj4)
-		}
-		obj4.childs=_data4;
-		_data.push(obj4);
-		_dataAll = _data;
 		console.log(_dataAll)
 		
 		var mobileSelect1 = new MobileSelect({
