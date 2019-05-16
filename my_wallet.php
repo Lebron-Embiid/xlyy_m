@@ -43,14 +43,14 @@
 		<h6>账户余额<span>10800.00元</span></h6>
 		<p>您的余额在本平台所有会员中排名第1532位，击败34%的会员！</p>
 	</div>
-	<div class="person_nav_box wallet_nav_box">
+	<!-- <div class="person_nav_box wallet_nav_box">
 		<div class="pn_item">
 			<a href="">
 				<p><img src="images/bind_icon.png" class="icon" alt="">绑定微信/支付宝账号</p>
 				<p><img src="images/three.png" class="three" alt=""></p>
 			</a>
 		</div>
-	</div>
+	</div> -->
 	<ul class="wallet_btn_ul">
 		<li class="active"><a href="recharge.php">充值</a></li>
 		<li><a href="withdraw.php">提现</a></li>

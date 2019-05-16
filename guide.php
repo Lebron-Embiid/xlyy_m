@@ -34,7 +34,7 @@
 			initialSlide:0,			//默认第1个显示
 			resistanceRatio: 0,		//为0则取消回弹距离
 			onReachEnd: function(swiper){
-				window.location = "login.php";
+				window.location.replace("login.php");
 			},
 		});
 	})

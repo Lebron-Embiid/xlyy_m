@@ -47,7 +47,7 @@
 			<ul class="provide_list">
 				<li>人工闹钟</li>
 				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></span></li>
+				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="10">元/次</li>
 				<li class="red">
 					<select name="" id="">
@@ -59,7 +59,7 @@
 			<ul class="provide_list">
 				<li>假扮女友</li>
 				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></span></li>
+				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/次</li>
 				<li class="red">
 					<select name="" id="">
@@ -89,7 +89,7 @@
 			<ul class="provide_list">
 				<li>人工闹钟</li>
 				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></span></li>
+				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="10">元/次</li>
 				<li class="red">
 					<select name="" id="">
@@ -101,7 +101,7 @@
 			<ul class="provide_list">
 				<li>假扮女友</li>
 				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></span></li>
+				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/天</li>
 				<li class="red">
 					<select name="" id="">
@@ -113,7 +113,7 @@
 			<ul class="provide_list">
 				<li>旅游陪伴</li>
 				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></span></li>
+				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/天</li>
 				<li class="red">
 					<select name="" id="">
@@ -125,7 +125,7 @@
 			<ul class="provide_list">
 				<li>出席商务场合</li>
 				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></span></li>
+				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/天</li>
 				<li class="red">
 					<select name="" id="">
@@ -137,7 +137,7 @@
 			<ul class="provide_list">
 				<li>更多服务</li>
 				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></span></li>
+				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/天</li>
 				<li class="red">
 					<select name="" id="">
