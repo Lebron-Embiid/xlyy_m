@@ -573,13 +573,20 @@ a.submit_btn{
 .prev_layer a{
 	display: inline-block;
 	overflow: hidden;
-	margin: 0 .1rem .06rem 0;	
+	margin: 0 .1rem .06rem 0;
+	line-height: 0;
 }
-.prev_layer img{
+.prev_layer a span{
 	display: inline-block;
 	width: .38rem;
 	height: .32rem;
+	background: url(../images/love.png) center center no-repeat;
+	background-size: 100% 100%;
 	/* margin: 0 .1rem .03rem 0; */
+}
+.prev_layer a.active span{
+	background: url(../images/love3.png) center center no-repeat;
+	background-size: 100% 100%;
 }
 .photo_preview_modal{
 	display: block;

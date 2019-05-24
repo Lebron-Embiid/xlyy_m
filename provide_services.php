@@ -46,8 +46,8 @@
 		<div class="provide_list_box">
 			<ul class="provide_list">
 				<li>人工闹钟</li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></li>
+				<li><span class="span"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="10">元/次</li>
 				<li class="red">
 					<select name="" id="">
@@ -58,8 +58,8 @@
 			</ul>
 			<ul class="provide_list">
 				<li>假扮女友</li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></li>
+				<li><span class="span"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/次</li>
 				<li class="red">
 					<select name="" id="">
@@ -88,8 +88,8 @@
 		<div class="provide_list_box">
 			<ul class="provide_list">
 				<li>人工闹钟</li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></li>
+				<li><span class="span"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="10">元/次</li>
 				<li class="red">
 					<select name="" id="">
@@ -100,8 +100,8 @@
 			</ul>
 			<ul class="provide_list">
 				<li>假扮女友</li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/天</li>
 				<li class="red">
 					<select name="" id="">
@@ -112,8 +112,8 @@
 			</ul>
 			<ul class="provide_list">
 				<li>旅游陪伴</li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/天</li>
 				<li class="red">
 					<select name="" id="">
@@ -124,8 +124,8 @@
 			</ul>
 			<ul class="provide_list">
 				<li>出席商务场合</li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/天</li>
 				<li class="red">
 					<select name="" id="">
@@ -136,8 +136,8 @@
 			</ul>
 			<ul class="provide_list">
 				<li>更多服务</li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="service[]" id=""></span></li>
-				<li><span class="active"><input type="checkbox" class="checkbox" name="land[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></li>
+				<li><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></li>
 				<li class="orange"><input type="text" value="1000">元/天</li>
 				<li class="red">
 					<select name="" id="">
@@ -206,11 +206,11 @@
 			modal.showModal(".provide_modal"+idx);
 		})
 		
-		$(".provide_list_box").on("click","input[type='checkbox']",function(){
+		$("body").on("click",".checkbox",function(){
 			if($(this).prop("checked") == true){
-				$(this).parent("span").removeClass("active");
+				$(this).parent(".span").addClass("active");
 			}else{
-				$(this).parent("span").addClass("active");
+				$(this).parent(".span").removeClass("active");
 			}
 		})
 	})

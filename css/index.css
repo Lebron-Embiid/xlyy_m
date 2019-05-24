@@ -1353,8 +1353,11 @@
 	display: block;
 	width: .39rem;
 	height: .39rem;
+	border-radius: 50%;
 	margin: 0 auto;
 	position: relative;
+	background: url(../images/ok_img1.png) center center no-repeat;
+	background-size: 100% 100%;	
 }
 .provide_list li input[type='checkbox']{
 	position: absolute;
@@ -1366,7 +1369,7 @@
 	filter: alpha(opacity=0);
 }
 .provide_list li span.active{
-	background: url(../images/ok_img1.png) center center no-repeat;
+	background: url(../images/ok_img2.png) center center no-repeat;
 	background-size: 100% 100%;	
 }
 .provide_ser_box .toLevel{

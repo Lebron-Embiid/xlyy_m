@@ -291,19 +291,19 @@
 				<div class="swiper-slide">
 					<img src="images/vip_preview_img.jpg" alt="" class="v_img">
 					<div class="prev_layer">
-						<a href=""><img src="images/love.png" alt=""></a>320
+						<a href="" class="active"><span></span></a>320
 					</div>
 				</div>
 				<div class="swiper-slide">
 					<img src="images/vip_preview_img.jpg" alt="" class="v_img">
 					<div class="prev_layer">
-						<a href=""><img src="images/love.png" alt=""></a>330
+						<a href=""><span></span></a>330
 					</div>
 				</div>
 				<div class="swiper-slide">
 					<img src="images/vip_preview_img.jpg" alt="" class="v_img">
 					<div class="prev_layer">
-						<a href=""><img src="images/love.png" alt=""></a>340
+						<a href=""><span></span></a>340
 					</div>
 				</div>
 				<div class="swiper-slide">
