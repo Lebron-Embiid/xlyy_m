@@ -12,10 +12,12 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/dropload.css">
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/swiper.min.js"></script>
+	<script src="js/dropload.js"></script>
 	<script src="js/modal.js"></script>
 	<style>
 		.modal_box .close_img{
@@ -36,36 +38,38 @@
 		<p><span></span>置顶会员</p>
 		<a href="top.php">我要置顶&gt;</a>
 	</div>
-	<ul class="index_list">
-		<li>
-			<a href="vip_detail.php">
-				<div class="img"><img src="images/index_img1.jpg" alt=""></div>
-				<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>
-				<p>年收入：100万； 净值...</p>
-			</a>
-		</li>
-		<li>
-			<a href="vip_detail.php">
-				<div class="img"><img src="images/index_img2.jpg" alt=""></div>
-				<h4><span class="il_name">木荣赫</span><span class="il_level">VIP</span></h4>
-				<p>年收入：100万； 净值...</p>
-			</a>
-		</li>
-		<li>
-			<a href="vip_detail.php">
-				<div class="img"><img src="images/index_img1.jpg" alt=""></div>
-				<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>
-				<p>年收入：100万； 净值...</p>
-			</a>
-		</li>
-		<li>
-			<a href="vip_detail.php">
-				<div class="img"><img src="images/index_img2.jpg" alt=""></div>
-				<h4><span class="il_name">木荣赫</span><span class="il_level">VIP</span></h4>
-				<p>年收入：100万； 净值...</p>
-			</a>
-		</li>
-	</ul>
+	<div class="index_list_box">
+		<ul class="index_list">
+			<li>
+				<a href="vip_detail.php">
+					<div class="img"><img src="images/index_img1.jpg" alt=""></div>
+					<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>
+					<p>年收入：100万； 净值...</p>
+				</a>
+			</li>
+			<li>
+				<a href="vip_detail.php">
+					<div class="img"><img src="images/index_img2.jpg" alt=""></div>
+					<h4><span class="il_name">木荣赫</span><span class="il_level">VIP</span></h4>
+					<p>年收入：100万； 净值...</p>
+				</a>
+			</li>
+			<li>
+				<a href="vip_detail.php">
+					<div class="img"><img src="images/index_img1.jpg" alt=""></div>
+					<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>
+					<p>年收入：100万； 净值...</p>
+				</a>
+			</li>
+			<li>
+				<a href="vip_detail.php">
+					<div class="img"><img src="images/index_img2.jpg" alt=""></div>
+					<h4><span class="il_name">木荣赫</span><span class="il_level">VIP</span></h4>
+					<p>年收入：100万； 净值...</p>
+				</a>
+			</li>
+		</ul>
+	</div>
 	<div class="modal_shadow"></div>
 	<div class="modal_box red_money_modal fix" style="padding: .3rem;">
 		<div class="close_img"><img src="images/close.png" alt=""></div>
@@ -114,6 +118,33 @@
 			autoplay : 5000,		//自动切换
 			loop: true,			//swiper循环
 			autoplayDisableOnInteraction : false
+		});
+		
+		var dropload = $('.index_list_box').dropload({
+		    scrollArea: window,
+		    domDown: {
+		        domClass: 'dropload-down',
+		        domRefresh: '<div class="dropload-refresh">上拉加载更多</div>',
+		        domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+		        domNoData: '<div class="dropload-noData">已无数据</div>'
+		    },
+		    loadDownFn: function (me) {
+		        setTimeout(function () {
+		            var result = '';
+		            for (var index = 0; index < 10; index++) {
+						result
+						+= '<li>'
+							+'<a href="vip_detail.php">'
+								+'<div class="img"><img src="images/index_img1.jpg" alt=""></div>'
+								+'<h4><span class="il_name">木荣赫</span><span class="il_level">初级</span></h4>'
+								+'<p>年收入：100万； 净值...</p>'
+							+'</a>'
+						+'</li>';
+		            }
+		            $('.index_list').append(result);
+		            me.resetload();
+		        }, 500);
+		    }
 		});
 	})
 </script>
